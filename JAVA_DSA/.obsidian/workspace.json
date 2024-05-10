@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Array/Array.md",
+                "file": "Array/LinearSearch.md",
                 "mode": "source",
                 "source": false
               }
@@ -69,8 +69,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 200,
-    "collapsed": true
+    "width": 200
   },
   "right": {
     "id": "4c9ed436aefd82c9",
@@ -86,7 +85,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Array/Array.md",
+                "file": "Array/LinearSearch.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -103,7 +102,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Array/Array.md",
+                "file": "Array/LinearSearch.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -126,7 +125,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Array/Array.md"
+                "file": "Array/LinearSearch.md"
               }
             }
           }
@@ -149,8 +148,9 @@
   },
   "active": "8f0112c3b75c80e9",
   "lastOpenFiles": [
-    "Untitled.md",
     "Array/Array.md",
+    "Array/LinearSearch.md",
+    "Untitled.md",
     "Array",
     "Welcome.md"
   ]
