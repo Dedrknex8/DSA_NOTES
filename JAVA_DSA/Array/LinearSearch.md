@@ -81,3 +81,65 @@ import javax.imageio.IIOException;
 }
 ```
 
+# Search in Two D-Array
+
+```java
+import java.util.Arrays;
+
+  
+
+public class car {
+
+  
+
+    public static void main(String[] args) {
+
+        int[][] array = {
+
+            {1,2,3},
+
+            {4,5,6},
+
+            {7,8,9,10} //intialising of 2D array
+
+        };
+
+  
+
+        int target=9;
+
+        int result[] = search(array,target);
+
+  
+
+        System.out.println("Found at "+Arrays.toString(result)); // to string method cahnnge array into human readable code
+
+    }
+
+  
+
+    private static int[] search(int[][] array, int target) {
+
+  
+
+        for(int i=0;i<array.length;i++){
+
+            for(int j=0; j <array[i].length;j++){
+
+                if (array[i][j]==target) {
+
+                    return new int[]{i,j}; // returni row=i & col=j
+
+                }
+
+            }
+
+        }
+
+        return new int[]{-1,-1}; //if not found then return -1
+
+    }
+
+}
+
+```
