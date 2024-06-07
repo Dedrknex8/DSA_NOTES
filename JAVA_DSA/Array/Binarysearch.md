@@ -1179,3 +1179,86 @@ public class car {
 
 }
 ```
+
+# Split array
+
+```
+public class car {
+
+     public static void main(String[] args) {
+
+        int[] nums = {7,2,5,10,8};
+
+        System.out.println(splitArray(nums,2));
+
+    }
+
+    static int splitArray(int[]nums,int m){
+
+        int start = 0;
+
+        int end = 0;
+
+  
+
+        for(int i=0;i<nums.length;i++){
+
+            start = Math.max(start, nums[i]); // it will change the start and end
+
+            end+=nums[i];
+
+        }
+
+        //calcaulte how many pieces
+
+        while (start < end) {
+
+        //think mid as potential ans
+
+        int mid = start + (end - start) / 2; //will get mid
+
+        int sum=0;
+
+        int pieces=1; // piece 1 beacuse it has 1 array alreaday
+
+        for(int num:nums){
+
+            if (num+sum> mid) {
+
+                //you can't add more create new subarray sum=num which in case = 32
+
+            sum=num;
+
+            pieces++; // p = 2
+
+            }else{
+
+                sum +=num;
+
+            }
+
+        }
+
+        if (pieces > m) {
+
+            start = mid+1;
+
+        }else{
+
+            end=mid;
+
+        }
+
+    }
+
+    return end;
+
+}
+
+}
+```
+## insertion if not found
+
+> `arr[0,1,3,4,5]` want to add 2 what will we do
+> `case:1` if target  <= mid then target = mid -1
+> `case 2:` target mid +1 
