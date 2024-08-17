@@ -13,13 +13,38 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Array/Sorting/Sorting.md",
+                "file": "Pattern/pattern q's.md",
+                "mode": "source",
+                "source": false
+              }
+            }
+          },
+          {
+            "id": "91cabcffd1af2e98",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Bug bounty/Cors Misconfiguration.md",
+                "mode": "source",
+                "source": false
+              }
+            }
+          },
+          {
+            "id": "006afecb28951d18",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Bit wise codes/Bit wise.md",
                 "mode": "source",
                 "source": false
               }
             }
           }
-        ]
+        ],
+        "currentTab": 2
       }
     ],
     "direction": "vertical"
@@ -85,7 +110,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Array/Sorting/Sorting.md",
+                "file": "Bit wise codes/Bit wise.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -102,7 +127,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Array/Sorting/Sorting.md",
+                "file": "Bit wise codes/Bit wise.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -125,7 +150,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Array/Sorting/Sorting.md"
+                "file": "Bit wise codes/Bit wise.md"
               }
             }
           }
@@ -146,10 +171,22 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "8f0112c3b75c80e9",
+  "active": "006afecb28951d18",
   "lastOpenFiles": [
+    "Recursion/What is Recusrion.md",
+    "Bit wise codes/Bit wise.md",
+    "Bit wise codes",
+    "Shell scripting/Scripting.md",
+    "Bug bounty/Methodlogy.md",
+    "Shell scripting",
+    "Bug bounty/CSRF.md",
+    "Bug bounty/Cors Misconfiguration.md",
     "Array/Array.md",
     "Array/Sorting/Sorting.md",
+    "Bug bounty",
+    "Recursion",
+    "Pattern/pattern q's.md",
+    "Pattern",
     "Array/Sorting",
     "Array/2 D array.md",
     "Array/Binarysearch.md",

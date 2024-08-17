@@ -1,0 +1,303 @@
+
+Command to check supported shells in the system
+
+```shell
+┌──(dedrknex㉿R0xt)-[~]
+└─$ cat /etc/shells
+# /etc/shells: valid login shells
+/bin/sh
+/usr/bin/sh
+/bin/bash
+/usr/bin/bash
+/bin/rbash
+/usr/bin/rbash
+/bin/dash
+/usr/bin/dash
+/usr/bin/tmux
+/bin/zsh
+/usr/bin/zsh
+/usr/bin/zsh
+```
+
+## Comments in bash
+
+```shell
+#!/bin/bash
+
+#This is comment 1
+#
+<<comment
+This is
+multi line Commnets
+comment
+
+echo "Worked"
+```
+
+> Output : `Worked`
+
+## Arrays
+
+```bash
+#!/bin/bash
+
+myArray=( 1 2 Name check)
+
+#Array can store multiple data types
+echo ${myArray[2]} # To get array
+
+#To print all contents of array
+
+echo ${myArray[*]}
+
+# To get lenght of array
+
+echo "length of array is : ${#myArray[*]}"
+
+#slicing in  array also possible
+
+echo "values from 2-3 ${myArray[*]:2:2}"
+
+#After : 2 {defines where to start} : 2 {how many more want}
+
+
+```
+
+## Key value pair Arrays
+
+```bash
+#!/bin/bash
+
+# How to store array key value pair
+
+declare -A myArray
+myArray=( [key]=value [name]=Chuck )
+
+echo "get the first value $(myArray[key])"
+```
+
+
+## UserInput
+
+> Taking input in from a user can be done by following
+
+```bash
+#!/bin/bash
+echo "What is your name?"
+read name
+
+echo "Your name is : $name"
+```
+
+
+>Output 
+
+```bash
+┌──(dedrknex㉿R0xt)-[~/scirpts]
+└─$ ./usrinp.sh
+What is your name?
+Hello
+Your  name is : Hello
+```
+
+2. A variation using -p tag to read 
+
+```bash
+#!/bin/bash
+
+
+read -p "What is your name? " name
+echo "Your  name is : $name"
+```
+
+>Output
+
+```bash
+┌──(dedrknex㉿R0xt)-[~/scirpts]
+└─$ ./usrinp.sh
+What is your name? Hello
+Your  name is : Hello
+```
+
+## Arithmatic operations
+
+>Arithmatic operation can be accesed by `let` command || `(())` command
+
+# IF else // elif
+
+```bash
+#!/bin/bash
+
+read -p "Enter your age : " age
+
+if [[ $age -ge 18 ]]
+then
+        echo "You're eligible to drive"
+elif [[ $age -le 18 ]]
+then
+        echo "You're not eligible to drive"
+else
+        echo "You can do whatever you want"
+
+fi
+```
+
+```bash
+┌──(dedrknex㉿R0xt)-[~/scirpts]
+└─$ ./cal.sh
+Enter your age : 19
+You're eligible to drive
+```
+
+#### Remarks
+1. make sure of the space b/w brackets
+2. after else no then conditon
+3. At the end put fi
+
+## Cases
+
+```
+#!/bin/bash
+
+echo "Hey Choose an option"
+
+echo "a = To see the current date"
+
+echo "b=see the content of the current dir"
+
+read choice
+
+case $choice in
+        a) date;;
+        b) ls;;
+        *) echo "choose a valid option"
+
+esac
+```
+
+output
+
+```
+┌──(dedrknex㉿R0xt)-[~/scirpts]
+└─$ bash cases.sh
+Hey Choose an option
+a = To see the current date
+b=see the content of the current dir
+a
+Sat Aug 17 05:10:30 AM IST 2024
+```
+
+## Logical operation
+
+> using or and conditional operator
+
+1. In And operator both case should  be true
+2. Or any conditon can  be true
+
+```bash
+#!/bin/bash
+
+read -p "Enter your age : " age
+read -p "Your country: " country
+if [[ $age -gt 18 ]] && [[ $country == India ]]
+then
+        echo "You're eligible to drive"
+else
+		echo "You're no eligble"
+```
+
+## For loops
+
+```bash
+┌──(dedrknex㉿R0xt)-[~/scirpts]
+└─$ cat loop.sh
+#!/bin/bash
+
+for i in 1 2 3 4 6
+do
+        echo "Number is $i"
+done
+```
+
+>output
+
+```bash
+┌──(dedrknex㉿R0xt)-[~/scirpts]
+└─$ bash loop.sh
+Number is 1
+Number is 2
+Number is 3
+Number is 4
+Number is 6
+```
+
+> To wirte loops in a optimize way
+
+```bash
+┌──(dedrknex㉿R0xt)-[~/scirpts]
+└─$ cat loop.sh
+#!/bin/bash
+
+for i in {1..6}
+do
+        echo "Number is $i"
+done
+```
+
+
+## To run a loop from a file
+
+```bash
+┌──(dedrknex㉿R0xt)-[~/scirpts]
+└─$ cat loopfile.sh
+#!/bin/bash
+
+File="/home/dedrknex/scirpts/numbers.txt"
+
+for num in $(cat $File)
+do
+        echo "Num is $num"
+done
+```
+
+## while loop
+
+> To read file using while loop
+
+```bash
+#!/bin/bash
+
+while read myNum
+do
+        echo $myNum
+done < /home/dedrknex/scirpts/numbers.txt
+```
+
+## Function
+
+> Function to call namaste some time
+
+```bash
+#!/bin/bash
+#
+function Welcome {
+let count=$1
+while [ $count -le 4 ]
+do
+        echo "Namaste"
+        ((count++)) # Double brac beacuse arithmatic operation
+done
+
+}
+Welcome 0
+```
+
+```bash
+┌──(dedrknex㉿R0xt)-[~/scirpts]
+└─$ bash fun.sh
+Namaste
+Namaste
+Namaste
+Namaste
+Namaste
+```
