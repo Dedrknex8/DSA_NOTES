@@ -301,3 +301,46 @@ Namaste
 Namaste
 Namaste
 ```
+
+## special loop like break,continue
+
+> Break is a command to break the loop after required condition met
+
+```<>
+#!/bin/bash
+
+# let's start with break loop
+#
+no=6
+
+for i in {1..6}
+do
+        #Break the loop if  no is not found
+        if [[ $no -eq $i ]]
+        then
+                echo "No is $i"
+                break   #loop will run till it not found 6 in the loop
+        fi
+        echo "Number found loop $i"
+done
+```
+
+> Continune is the command that doesn't leave the loop if req met
+
+```<>
+#!/bin/bash
+
+#Continue loop will  continue running within loop till requuirement meet
+
+
+for i in {1..10}
+do
+        r=$(($i%2))
+        if [[ $r -eq 0 ]]
+        then
+                continue
+        fi
+        echo "odd num is $i"
+done
+```
+

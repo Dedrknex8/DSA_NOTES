@@ -37,7 +37,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Bit wise codes/Bit wise.md",
+                "file": "Shell scripting/Project.md",
                 "mode": "source",
                 "source": false
               }
@@ -110,7 +110,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Bit wise codes/Bit wise.md",
+                "file": "Shell scripting/Project.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -127,7 +127,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Bit wise codes/Bit wise.md",
+                "file": "Shell scripting/Project.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -150,7 +150,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Bit wise codes/Bit wise.md"
+                "file": "Shell scripting/Project.md"
               }
             }
           }
@@ -173,10 +173,11 @@
   },
   "active": "006afecb28951d18",
   "lastOpenFiles": [
-    "Recursion/What is Recusrion.md",
-    "Bit wise codes/Bit wise.md",
-    "Bit wise codes",
     "Shell scripting/Scripting.md",
+    "Shell scripting/Project.md",
+    "Bit wise codes/Bit wise.md",
+    "Recursion/What is Recusrion.md",
+    "Bit wise codes",
     "Bug bounty/Methodlogy.md",
     "Shell scripting",
     "Bug bounty/CSRF.md",
