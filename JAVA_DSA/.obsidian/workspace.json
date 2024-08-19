@@ -37,7 +37,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Shell scripting/Project.md",
+                "file": "Bit wise codes/MATHS.md",
                 "mode": "source",
                 "source": false
               }
@@ -110,7 +110,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Shell scripting/Project.md",
+                "file": "Bit wise codes/MATHS.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -127,7 +127,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Shell scripting/Project.md",
+                "file": "Bit wise codes/MATHS.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -150,7 +150,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Shell scripting/Project.md"
+                "file": "Bit wise codes/MATHS.md"
               }
             }
           }
@@ -173,9 +173,10 @@
   },
   "active": "006afecb28951d18",
   "lastOpenFiles": [
+    "Bit wise codes/Bit wise.md",
+    "Bit wise codes/MATHS.md",
     "Shell scripting/Scripting.md",
     "Shell scripting/Project.md",
-    "Bit wise codes/Bit wise.md",
     "Recursion/What is Recusrion.md",
     "Bit wise codes",
     "Bug bounty/Methodlogy.md",

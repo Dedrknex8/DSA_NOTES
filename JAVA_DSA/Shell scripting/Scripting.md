@@ -344,3 +344,60 @@ do
 done
 ```
 
+## Some important bash varibales
+
+> This varibales are provided by  bash itslef
+> like random and uid etc
+
+1. Random : gives random int b/w 0 and 32767
+2. UID: user id of current  user logged in
+
+```bash
+┌──(dedrknex㉿R0xt)-[~]
+└─$ echo $RANDOM
+21121
+```
+
+```bash
+#!/bin/bash
+
+#here u will use random command to generate a num
+#b\w 1 and 6 on a dice
+
+num=$(( $RANDOM%6+1 ))
+
+echo "Num is $num"
+```
+
+# Redirection in script
+
+>The redirection is command in bash which is used to save output in a file example `> >>`
+
+# What is /dev/null
+
+> In case if u don't want to print the output of a command on a terminal or written in a file especially the error
+
+> We can use redirect the output to /dev/null
+
+>Example # cd /root &> /dev/null
+
+## TO print the name of a script
+
+```bash
+$ vi script.sh
+
+#!/bin/bash
+
+echo "The name of the script is: ${0}"
+
+Output: The name of the script is script.sh
+```
+
+## Logging a message
+
+>I f u want to maintain the logging for your script u can use logger in in ur script
+
+> You can find the logs under `/var/logs/messages`
+> Example # logger "Hey buddy"
+
+#### TO debug use Set -X at  top of script

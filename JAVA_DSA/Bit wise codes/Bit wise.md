@@ -221,3 +221,68 @@ public class car {
 
 }
 ```
+
+
+## Find num rep 3 times
+
+```<>
+public class car {
+
+  
+
+    public static void main(String[] args) {
+
+        int nums[]={1,2,3,1,2,1,2};
+
+  
+
+        int unq = findUnqiue(nums);
+
+        System.out.println(unq);
+
+  
+
+    }
+
+  
+
+    private static int findUnqiue(int[] nums) {
+
+       int bitCount[]= new int[32]; // Array to store count of 1s
+
+  
+
+       for(int num:nums){
+
+        for(int i=0;i<32;i++){
+
+            if ((num&(1<<i))!=0) { // check if ith bit is set or not
+
+                bitCount[i]++; //if the the ith bit is not zero
+
+            }
+
+        }
+
+       }
+
+  
+
+       int res = 0;
+
+       for(int i=0;i<32;i++){
+
+        if (bitCount[i] %3 !=0) {
+
+            res|=(1<<i);
+
+        }
+
+       }
+
+       return res;
+
+    }
+
+}
+```
