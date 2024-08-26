@@ -37,7 +37,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Recursion/What is Recusrion.md",
+                "file": "Pattern/pattern q's.md",
                 "mode": "source",
                 "source": false
               }
@@ -110,7 +110,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Recursion/What is Recusrion.md",
+                "file": "Pattern/pattern q's.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -127,7 +127,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Recursion/What is Recusrion.md",
+                "file": "Pattern/pattern q's.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -150,7 +150,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Recursion/What is Recusrion.md"
+                "file": "Pattern/pattern q's.md"
               }
             }
           }
@@ -173,17 +173,19 @@
   },
   "active": "006afecb28951d18",
   "lastOpenFiles": [
+    "Recursion/Recursion with array.md",
+    "Recursion/What is Recusrion.md",
+    "Array/LinearSearch.md",
+    "Array/Array.md",
     "Bit wise codes/MATHS.md",
     "Bit wise codes/Bit wise.md",
     "Shell scripting/Scripting.md",
     "Shell scripting/Project.md",
-    "Recursion/What is Recusrion.md",
     "Bit wise codes",
     "Bug bounty/Methodlogy.md",
     "Shell scripting",
     "Bug bounty/CSRF.md",
     "Bug bounty/Cors Misconfiguration.md",
-    "Array/Array.md",
     "Array/Sorting/Sorting.md",
     "Bug bounty",
     "Recursion",
@@ -192,7 +194,6 @@
     "Array/Sorting",
     "Array/2 D array.md",
     "Array/Binarysearch.md",
-    "Array/LinearSearch.md",
     "Untitled",
     "Untitled.md",
     "Array",
