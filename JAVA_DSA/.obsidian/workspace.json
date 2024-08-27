@@ -37,7 +37,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Pattern/pattern q's.md",
+                "file": "Recursion/Recursion with array.md",
                 "mode": "source",
                 "source": false
               }
@@ -110,7 +110,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Pattern/pattern q's.md",
+                "file": "Recursion/Recursion with array.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -127,7 +127,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Pattern/pattern q's.md",
+                "file": "Recursion/Recursion with array.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -150,7 +150,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Pattern/pattern q's.md"
+                "file": "Recursion/Recursion with array.md"
               }
             }
           }
@@ -173,6 +173,7 @@
   },
   "active": "006afecb28951d18",
   "lastOpenFiles": [
+    "Pattern/pattern q's.md",
     "Recursion/Recursion with array.md",
     "Recursion/What is Recusrion.md",
     "Array/LinearSearch.md",
@@ -189,7 +190,6 @@
     "Array/Sorting/Sorting.md",
     "Bug bounty",
     "Recursion",
-    "Pattern/pattern q's.md",
     "Pattern",
     "Array/Sorting",
     "Array/2 D array.md",
