@@ -162,3 +162,162 @@ static void MoveWithbacktack(String p,boolean[][]maze,int r, int c,int[][]path,i
     path[r][c] = 0;  
 }
 ```
+
+## N queen problem
+
+```java
+public class Nqueens {
+    public static void main(String[] args) {
+        int n = 4;
+        boolean[][] board = new boolean[n][n];
+        int solution=queens(board, 0);
+        System.out.println(solution);
+    }
+
+    static int queens(boolean[][] board, int row) {
+        if (row == board.length) {
+            display(board);
+            System.out.println();
+
+            return 1;
+        }
+        //Now checking if can be place at row and col
+        int count = 0;
+        for (int col = 0; col < board.length; col++) {
+            if (isSafe(board, row, col)) {
+                board[row][col] = true;
+                count += queens(board, row + 1);
+                board[row][col] = false;
+            }
+        }
+        return count;
+    }
+
+
+    static boolean isSafe(boolean[][] board, int row, int col) {
+        // Check vertical column
+        for (int i = 0; i < row; i++) {
+            if (board[i][col]) {
+                return false;
+            }
+        }
+
+        // Check left diagonal
+        for (int i = 0; i <= row && col - i >= 0; i++) {
+            if (board[row - i][col - i]) {
+                return false;
+            }
+        }
+
+        // Check right diagonal
+        for (int i = 0; i <= row && col + i < board.length; i++) {
+            if (board[row - i][col + i]) {
+                return false;
+            }
+        }
+
+        return true;
+    }
+
+
+    static void display(boolean[][] board) {
+        for (boolean[] row : board) {
+            for (boolean element : row) {
+                if (element) {
+                    System.out.print("Q");
+                } else {
+                    System.out.print("X");
+                }
+            }
+            System.out.println();
+        }
+    }
+}
+
+```
+
+## K night Problem
+
+```java
+public class Nknight {  
+    public static void main(String[] args) {  
+        int n=4;  
+        boolean[][] board = new boolean[n][n];  
+         Knight(board,0,0,4);  
+  
+    }  
+    static void Knight(boolean[][] board,int row,int col,int knight) {  
+        if (knight ==0){  
+            display(board);  
+            return;  
+        }  
+        //check if they are out of bound or not  
+        if (row == board.length-1 && col == board.length){  
+            return;  
+        }  
+        if (row == board.length && col == 0) {  
+            Knight(board,row+1,0,knight+1);  
+            return;  
+        }  
+  
+        if (col == board.length) {  
+            Knight(board, row + 1, 0, knight);  
+            return;  
+        }  
+        if (isSafe(board,row,col)){  
+            board[row][col] = true;  
+            Knight(board,row,col+1,knight-1);  
+            board[row][col] = false;  
+        }  
+        Knight(board,row,col+1,knight);  
+    }  
+    static boolean isSafe(boolean[][] board, int row, int col) {  
+        //check for vertical  
+  
+        if (isvalid(board,row-1,col+2)){  
+            if (board[row-1][col+2]){  
+                return false;  
+            }  
+        }  
+        if (isvalid(board,row-1,col-2)) {  
+            if (board[row-1][col-2]){  
+            return false;  
+        }  
+        }  
+        if (isvalid(board,row+2,col-1)){  
+            if (board[row+2][col-1]){  
+                return false;  
+            }  
+        }  
+        if (isvalid(board,row+2,col+1)){  
+            if (board[row+2][col+1]){  
+                return false;  
+            }  
+        }  
+        return true;  
+    }  
+    static boolean isvalid(boolean[][] board, int row, int col) {  
+        if (row >= 0 && row < board.length && col >= 0 && col < board.length){  
+            return true;  
+        }  
+        return false;  
+    }  
+  
+        static void display(boolean[][] board){  
+        for (boolean[] row : board) {  
+            for (boolean element : row) {  
+                if (element){  
+                    System.out.print("K");  
+  
+                }  
+                else {  
+                    System.out.print("X");  
+                }  
+            }  
+            System.out.println();  
+        }  
+    }  
+}
+```
+
+> If want to return count create a var a count =0 in body and return count
