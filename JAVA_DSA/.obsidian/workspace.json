@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Pattern/pattern q's.md",
+                "file": "DSA/Pattern/pattern q's.md",
                 "mode": "source",
                 "source": false
               }
@@ -37,7 +37,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Recursion/Permutation.md",
+                "file": "DSA/Linked List.md",
                 "mode": "source",
                 "source": false
               }
@@ -110,7 +110,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Recursion/Permutation.md",
+                "file": "DSA/Linked List.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -127,7 +127,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Recursion/Permutation.md",
+                "file": "DSA/Linked List.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -150,7 +150,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Recursion/Permutation.md"
+                "file": "DSA/Linked List.md"
               }
             }
           }
@@ -158,7 +158,8 @@
       }
     ],
     "direction": "horizontal",
-    "width": 300
+    "width": 200,
+    "collapsed": true
   },
   "left-ribbon": {
     "hiddenItems": {
@@ -172,34 +173,36 @@
   },
   "active": "006afecb28951d18",
   "lastOpenFiles": [
-    "Recursion/Strings operation with recu.md",
-    "Recursion/Permutation.md",
-    "Recursion/Recursion with array.md",
-    "Pattern/pattern q's.md",
+    "DSA/Bit wise codes/Bit wise.md",
+    "DSA/Linked List.md",
+    "DSA",
+    "DSA/Bit wise codes/MATHS.md",
     "Bug bounty/Target.md",
-    "Pattern/Untitled.md",
-    "Recursion/What is Recusrion.md",
-    "Array/LinearSearch.md",
-    "Array/Array.md",
-    "Bit wise codes/MATHS.md",
-    "Bit wise codes/Bit wise.md",
+    "DSA/Recursion/Permutation.md",
+    "DSA/Recursion/Strings operation with recu.md",
+    "DSA/Recursion/Recursion with array.md",
+    "DSA/Pattern/pattern q's.md",
+    "DSA/Pattern/Untitled.md",
+    "DSA/Recursion/What is Recusrion.md",
+    "DSA/Array/LinearSearch.md",
+    "DSA/Array/Array.md",
     "Shell scripting/Scripting.md",
     "Shell scripting/Project.md",
-    "Bit wise codes",
+    "DSA/Bit wise codes",
     "Bug bounty/Methodlogy.md",
     "Shell scripting",
     "Bug bounty/CSRF.md",
     "Bug bounty/Cors Misconfiguration.md",
-    "Array/Sorting/Sorting.md",
+    "DSA/Array/Sorting/Sorting.md",
     "Bug bounty",
-    "Recursion",
-    "Pattern",
-    "Array/Sorting",
-    "Array/2 D array.md",
-    "Array/Binarysearch.md",
+    "DSA/Recursion",
+    "DSA/Pattern",
+    "DSA/Array/Sorting",
+    "DSA/Array/2 D array.md",
+    "DSA/Array/Binarysearch.md",
     "Untitled",
     "Untitled.md",
-    "Array",
+    "DSA/Array",
     "Welcome.md"
   ]
 }
