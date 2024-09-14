@@ -147,3 +147,287 @@ public class LL {
     }  
 }
 ```
+
+# Leetcode q's
+
+## Cycle detecction
+
+```<>
+/**
+
+ * Definition for singly-linked list.
+
+ * class ListNode {
+
+ *     int val;
+
+ *     ListNode next;
+
+ *     ListNode(int x) {
+
+ *         val = x;
+
+ *         next = null;
+
+ *     }
+
+ * }
+
+ */
+
+public class Solution {
+
+    public boolean hasCycle(ListNode head) {
+
+        ListNode fast = head;
+
+        ListNode sec = head;
+
+  
+
+        while(fast!=null && fast.next!=null){
+
+            fast = fast.next.next; // fast move 2 steps
+
+            s = s.next; //slow move 1 step
+
+  
+
+            if(fast == s){
+
+                return true;
+
+            }
+
+        }
+
+        return false;
+
+    }
+
+}
+```
+
+
+##Length of cycle 
+
+```<>
+/**
+
+ * Definition for singly-linked list.
+
+ * class ListNode {
+
+ *     int val;
+
+ *     ListNode next;
+
+ *     ListNode(int x) {
+
+ *         val = x;
+
+ *         next = null;
+
+ *     }
+
+ * }
+
+ */
+
+public class Solution {
+
+    public int countCycl(ListNode head) {
+
+        ListNode fast = head;
+
+        ListNode sec = head;
+
+  
+
+        while(fast!=null && fast.next!=null){
+
+            fast = fast.next.next; // fast move 2 steps
+
+            s = s.next; //slow move 1 step
+
+  
+
+            if(fast == s){
+
+            ListNode temp=slow;
+
+            int Length =0;
+
+            do{
+
+                temp=temp.next;
+
+                length++;
+
+            }while(temp!=s);
+
+                return length;
+
+            }
+
+        }
+
+        return 0;
+
+    }
+
+}
+```
+
+# Find from where the cycle starts
+
+```<>
+/**
+
+ * Definition for singly-linked list.
+
+ * class ListNode {
+
+ *     int val;
+
+ *     ListNode next;
+
+ *     ListNode(int x) {
+
+ *         val = x;
+
+ *         next = null;
+
+ *     }
+
+ * }
+
+ */
+
+public class Solution {
+
+  
+
+    public int Len(ListNode head) {
+
+        Node fast = head;
+
+        Node s = head;
+
+  
+
+        while(fast!=null && fast.next!=null){
+
+            fast = fast.next.next; // fast move 2 steps
+
+            s = s.next; //slow move 1 step
+
+  
+
+            if(fast == s){
+
+                ListNode temp=s;
+
+                int length =0;
+
+                do{
+
+                    temp=temp.next;
+
+                    length++;
+
+                }while(temp!=s);
+
+                return length;
+
+  
+
+            }
+
+        }
+
+        return 0;
+
+    }
+
+  
+
+    public ListNode detectCycle(ListNode head) {
+
+        int length = 0;
+
+  
+
+        Node fast = head;
+
+        Node s = head;
+
+  
+
+        while (fast != null && fast.next != null) {
+
+            fast = fast.next.next; // fast move 2 steps
+
+            s = s.next; //slow move 1 step
+
+  
+
+            if (fast == s) {
+
+                length = Len(s);
+
+                break;
+
+            }
+
+            if (length==0){
+
+                return null;
+
+            }
+
+  
+
+            //move f by 1
+
+  
+
+            Node f = head;
+
+            Node slow = head;
+
+  
+
+            // move slow pointer to the len of list
+
+            while (length > 0) {
+
+                slow = slow.next;
+
+                length--;
+
+            }
+
+  
+
+            //move both f and slow until they meet each other
+
+            while (f != slow) {
+
+                f = f.next;
+
+                slow = slow.next;
+
+            }
+
+            return s;
+
+  
+
+        }
+
+    }
+
+}
+```
+
