@@ -431,3 +431,108 @@ public class Solution {
 }
 ```
 
+## Find middle in a linked list
+
+```<>
+/**
+
+ * Definition for singly-linked list.
+
+ * public class ListNode {
+
+ *     int val;
+
+ *     ListNode next;
+
+ *     ListNode() {}
+
+ *     ListNode(int val) { this.val = val; }
+
+ *     ListNode(int val, ListNode next) { this.val = val; this.next = next; }
+
+ * }
+
+ */
+
+class Solution {
+
+    public ListNode middleNode(ListNode head) {
+
+        ListNode s = head;
+
+        ListNode f = head;
+
+  
+
+        while(f !=null && f.next!=null){
+
+            f=f.next.next;
+
+            s=s.next;
+
+        }
+
+        return s;
+
+    }
+
+}
+```
+
+## Reverse of LinkedList
+
+```<>
+/**
+
+ * Definition for singly-linked list.
+
+ * public class ListNode {
+
+ *     int val;
+
+ *     ListNode next;
+
+ *     ListNode() {}
+
+ *     ListNode(int val) { this.val = val; }
+
+ *     ListNode(int val, ListNode next) { this.val = val; this.next = next; }
+
+ * }
+
+ */
+
+class Solution {
+
+    public ListNode reverseList(ListNode head) {
+
+  
+
+        ListNode prev = null;
+
+        ListNode Present = head;
+
+        ListNode next = null;
+
+  
+
+        while(Present !=null){
+
+           next = Present.next;
+
+            Present.next = prev;
+
+            prev = Present;
+
+            Present = Present.next;
+
+            Present = next;
+
+        }
+
+         return prev;
+
+    }
+
+}
+```
