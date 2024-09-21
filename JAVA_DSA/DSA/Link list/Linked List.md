@@ -717,3 +717,128 @@ class Solution {
 
 }
 ```
+
+```<>
+public class LinkedRev {  
+    static class Node{  
+        Node head;  
+        Node nextNode;  
+        Node prev;  
+        int data;  
+        Node next;  
+        public Node(int data){  
+            this.data = data;  
+        }  
+}  
+        public static Node listrevr(Node head) {  
+            Node curr = head;  
+            Node prev = null;  
+            Node next;  
+  
+        while(curr != null){  
+                //store next of curr node  
+  
+                next = curr.next;  
+                //this will change dir <-  
+                curr.next = prev;  
+  
+                //move pointer by 1  
+                prev = curr;  
+                curr = next;  
+            }  
+            return prev;  
+        }  
+  
+        //Reversing kth group in a node  
+        static int length(Node head){  
+        Node curr = head;  
+        int count = 0;  
+        while(curr != null){  
+            curr = curr.next;  
+            count++;  
+        }  
+        return count;  
+        }  
+  
+  
+    static Node reversegroup(Node head, int k) {  
+        Node curr = head;  
+        Node nextNode = null;  
+        Node prev = null;  
+  
+        // Count the number of nodes in the linked list  
+        int N = length(head);  
+        int groups = N / k;  // Total number of full groups  
+  
+        Node prevTail = null;  // The tail of the previous group  
+        Node newHead = null;   // The new head of the reversed list  
+  
+        // Reverse each group        for (int i = 0; i < groups; i++) {  
+            Node groupHead = curr;  // Head of the current group  
+            Node groupPrev = null;  // Reversed group's previous node  
+  
+            // Reverse `k` nodes            for (int j = 0; j < k && curr != null; j++) {  
+                nextNode = curr.next;  
+                curr.next = groupPrev;  
+                groupPrev = curr;  
+                curr = nextNode;  
+            }  
+  
+            // If this is the first group, update the new head  
+            if (newHead == null) {  
+                newHead = groupPrev;  
+            }  
+  
+            // Connect the tail of the previous group to the head of the reversed group  
+            if (prevTail != null) {  
+                prevTail.next = groupPrev;  
+            }  
+  
+            // The current group's head becomes the tail for the next group  
+            prevTail = groupHead;  
+        }  
+  
+        // Attach the remaining part of the list (if any) to the last group's tail  
+        if (prevTail != null) {  
+            prevTail.next = curr;  
+        }  
+  
+        return newHead;  
+    }  
+  
+  
+  
+    // Utility function to print the linked list  
+    static void printList(Node head) {  
+        Node curr = head;  
+        while (curr != null) {  
+            System.out.print(curr.data + " ");  
+            curr = curr.next;  
+        }  
+        System.out.println();  
+    }  
+  
+    public static void main(String[] args) {  
+        // Creating the linked list 1 -> 2 -> 3 -> 4 -> 5 -> 6  
+        Node head = new Node(1);  
+        head.next = new Node(2);  
+        head.next.next = new Node(3);  
+        head.next.next.next = new Node(4);  
+        head.next.next.next.next = new Node(5);  
+        head.next.next.next.next.next = new Node(6);  
+        head.next.next.next.next.next.next = new Node(7);  
+  
+  
+        System.out.print("Given Linked List: ");  
+        printList(head);  
+  
+        // Reverse the linked list in groups of 3  
+        head = reversegroup(head, 3);  
+  
+        System.out.print("Reversed in Groups of 3: ");  
+        printList(head);  
+    }  
+  
+  
+}
+```
