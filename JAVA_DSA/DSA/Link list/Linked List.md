@@ -842,3 +842,85 @@ public class LinkedRev {
   
 }
 ```
+
+## Rotate linked list
+
+```java
+/**
+
+ * Definition for singly-linked list.
+
+ * public class ListNode {
+
+ *     int val;
+
+ *     ListNode next;
+
+ *     ListNode() {}
+
+ *     ListNode(int val) { this.val = val; }
+
+ *     ListNode(int val, ListNode next) { this.val = val; this.next = next; }
+
+ * }
+
+ */
+
+class Solution {
+
+    public ListNode rotateRight(ListNode head, int k) {
+
+        //base case check if only one node is present
+
+        if(k<=0 || head == null){
+
+            return head;
+
+        }
+
+        ListNode last=head;
+
+        int length=1;
+
+  
+
+        //this will get the total length
+
+        while(last.next!=null){
+
+            last = last.next;
+
+            length++;
+
+        }
+
+        last.next=head; // this will make the head as 5 -> 1
+
+  
+
+        //getting roation for k times
+
+        int rotations = k % length;
+
+  
+
+        int skip = length - rotations;
+
+        ListNode newLast = head;
+
+        for(int i=0;i<skip-1;i++){
+
+            newLast = newLast.next;
+
+        }
+
+        head = newLast.next; // this will make last node as head
+
+        newLast.next=null; //the newtail will point to null
+
+        return head;
+
+    }
+
+}
+```
