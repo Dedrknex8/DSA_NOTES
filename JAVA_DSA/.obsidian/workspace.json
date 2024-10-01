@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "DSA/Link list/Linked List.md",
+                "file": "DSA/Queue & Stack/Queue and stack implemention.md",
                 "mode": "source",
                 "source": false
               }
@@ -85,7 +85,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "DSA/Link list/Linked List.md",
+                "file": "DSA/Queue & Stack/Queue and stack implemention.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -102,7 +102,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "DSA/Link list/Linked List.md",
+                "file": "DSA/Queue & Stack/Queue and stack implemention.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -125,7 +125,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "DSA/Link list/Linked List.md"
+                "file": "DSA/Queue & Stack/Queue and stack implemention.md"
               }
             }
           }
@@ -148,6 +148,9 @@
   },
   "active": "91cabcffd1af2e98",
   "lastOpenFiles": [
+    "DSA/Link list/Linked List.md",
+    "DSA/Queue & Stack/Queue and stack implemention.md",
+    "DSA/Queue & Stack",
     "DSA/Recursion/Recursion with array.md",
     "DSA/Array/Binarysearch.md",
     "DSA/Array/LinearSearch.md",
@@ -156,7 +159,6 @@
     "DSA/Recursion/Permutation.md",
     "DSA/Array/Array.md",
     "DSA/Array/Sorting/Sorting.md",
-    "DSA/Link list/Linked List.md",
     "DSA/Link list/Doubly LL.md",
     "DSA/Link list",
     "Bug bounty/Cors Misconfiguration.md",
@@ -179,7 +181,6 @@
     "Shell scripting",
     "Bug bounty/CSRF.md",
     "Bug bounty",
-    "Untitled",
     "Untitled.md",
     "Welcome.md"
   ]
