@@ -161,3 +161,168 @@ public class Queuemaxnum {
     }  
 }
 ```
+
+
+# Find largest area of a histogram
+
+```java
+class Solution {
+
+    public static int largestRectangleArea(int[] heights) {
+
+        int ns[] = findnextSmaller(heights);
+
+        int ps[] = findpreviousSmaller(heights);
+
+  
+
+        int max = Integer.MIN_VALUE;
+
+        for (int i = 0; i < heights.length; i++) {
+
+            int h  = heights[i]; // hight will be idx value
+
+  
+
+            int w = ns[i] -  ps[i] - 1; //this will get the width
+
+  
+
+            max = Math.max(max, (h*w));
+
+        }
+
+        return max;
+
+  
+
+    }
+
+    public static int[] findnextSmaller(int[] arr){
+
+        int n = arr.length;
+
+        Stack<Integer> stack = new Stack<Integer>();
+
+  
+
+        int result[] = new int[n];
+
+        for(int i=n-1; i>=0; i--){ // i here is idx
+
+            while(!stack.isEmpty() && arr[stack.peek()] >= arr[i]){
+
+                stack.pop();
+
+            }
+
+  
+
+            if(stack.isEmpty()){
+
+                result[i] = n;
+
+  
+
+            }
+
+            else {
+
+                result[i] = stack.peek();
+
+            }
+
+            stack.push(i);
+
+        }
+
+        return result;
+
+    }
+
+    public static int[] findpreviousSmaller(int[] arr){
+
+        int n = arr.length;
+
+        Stack<Integer> stack = new Stack<Integer>();
+
+  
+
+        int result[] = new int[n];
+
+        for(int i=0; i<n; i++){ // i here is idx
+
+            while(!stack.isEmpty() && arr[stack.peek()] >= arr[i]){
+
+                stack.pop();
+
+            }
+
+  
+
+            if(stack.isEmpty()){
+
+                result[i] = -1; // this will make the ps as -1
+
+  
+
+            }
+
+            else {
+
+                result[i] = stack.peek();
+
+            }
+
+            stack.push(i);
+
+        }
+
+        return result;
+
+    }
+
+}
+```
+
+## More optimized way of histogram
+
+```java
+class Solution {
+
+   public static int largestRectangleArea(int[] heights) {
+
+       Stack<Integer> stack = new Stack<>();
+
+        int n = heights.length;
+
+  
+
+        int max=Integer.MIN_VALUE;
+
+        for(int i=0;i<=n;i++){
+
+            int elements = (i==n)?0:heights[i]; //this will check if elemt is last than 0 will be added a top
+
+            while (!stack.isEmpty() && heights[stack.peek()]>elements) {
+
+                int h = heights[stack.pop()];
+
+                int ps = stack.isEmpty() ? -1 : stack.peek();
+
+                int w = i - ps - 1;
+
+                max = Math.max(max, w * h);
+
+            }
+
+            stack.push(i);
+
+        }
+
+        return (max==Integer.MIN_VALUE?0:max);
+
+   }
+
+}
+```
