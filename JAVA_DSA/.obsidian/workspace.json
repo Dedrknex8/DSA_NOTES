@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "DSA/Link list/Linked List.md",
+                "file": "DSA/Tree/Tree.md",
                 "mode": "source",
                 "source": false
               }
@@ -65,8 +65,7 @@
               "state": {}
             }
           }
-        ],
-        "currentTab": 1
+        ]
       }
     ],
     "direction": "horizontal",
@@ -86,7 +85,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "DSA/Link list/Linked List.md",
+                "file": "DSA/Tree/Tree.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -103,7 +102,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "DSA/Link list/Linked List.md",
+                "file": "DSA/Tree/Tree.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -126,7 +125,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "DSA/Link list/Linked List.md"
+                "file": "DSA/Tree/Tree.md"
               }
             }
           }
@@ -149,9 +148,12 @@
   },
   "active": "91cabcffd1af2e98",
   "lastOpenFiles": [
+    "Pasted image 20241007092656.png",
+    "DSA/Link list/Linked List.md",
+    "DSA/Tree/Tree.md",
+    "DSA/Tree",
     "DSA/Queue & Stack/Simple queue game.md",
     "DSA/Queue & Stack/Queue and stack implemention.md",
-    "DSA/Link list/Linked List.md",
     "DSA/Queue & Stack",
     "DSA/Recursion/Recursion with array.md",
     "DSA/Array/Binarysearch.md",
@@ -181,9 +183,6 @@
     "Shell scripting/Project.md",
     "Bug bounty/Methodlogy.md",
     "Shell scripting",
-    "Bug bounty/CSRF.md",
-    "Bug bounty",
-    "Untitled.md",
-    "Welcome.md"
+    "Bug bounty/CSRF.md"
   ]
 }
