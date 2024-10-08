@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "DSA/Tree/Tree.md",
+                "file": "DSA/Tree/BinarySearch Tree.md",
                 "mode": "source",
                 "source": false
               }
@@ -85,7 +85,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "DSA/Tree/Tree.md",
+                "file": "DSA/Tree/BinarySearch Tree.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -102,7 +102,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "DSA/Tree/Tree.md",
+                "file": "DSA/Tree/BinarySearch Tree.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -125,7 +125,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "DSA/Tree/Tree.md"
+                "file": "DSA/Tree/BinarySearch Tree.md"
               }
             }
           }
@@ -148,9 +148,10 @@
   },
   "active": "91cabcffd1af2e98",
   "lastOpenFiles": [
+    "DSA/Tree/Tree.md",
+    "DSA/Tree/BinarySearch Tree.md",
     "Pasted image 20241007092656.png",
     "DSA/Link list/Linked List.md",
-    "DSA/Tree/Tree.md",
     "DSA/Tree",
     "DSA/Queue & Stack/Simple queue game.md",
     "DSA/Queue & Stack/Queue and stack implemention.md",

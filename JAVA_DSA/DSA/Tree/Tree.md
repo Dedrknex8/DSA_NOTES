@@ -81,5 +81,96 @@ public class Tree {
 - Desicion tree
 - compression of files *Imp* 
 
+## Types of tree
 
+
+1.  On the basis of NUm of child
+	- Full binary tree : tree with 0,1,2 child
+	- degenetate  :  only 1 child
+	- Skewed binary tree: tree in which all the nodes have only either 1 child or 0 child.
+
+2. On The basis of completness of level
+	- Complete Binary tree : all level are filled execpt the lowest node 
+		- Application: Heap sort & heap-sort based dsa
+	- Perefect Binary Tree: all the leaf nodes are at the same depth, and all non-leaf nodes have two children
+	- Balanced Binary tree : A binary tree is balanced if the height of the tree is ****O(Log n)**** where n is the number of nodes.
+- ****On the basis of Node Values:****
+    - [Binary Search Tree](https://www.geeksforgeeks.org/binary-search-tree-data-structure/)
+    - [AVL Tree](https://www.geeksforgeeks.org/introduction-to-avl-tree/)
+    - [Red Black Tree](https://www.geeksforgeeks.org/introduction-to-red-black-tree/)
+    - [B Tree](https://www.geeksforgeeks.org/introduction-of-b-tree-2/)
+    - [B+ Tree](https://www.geeksforgeeks.org/introduction-of-b-tree/)
+    - [Segment Tree](https://www.geeksforgeeks.org/segment-tree-data-structure/)
+
+
+
+## Binary insertion operations
+
+```java
+import java.util.Scanner;  
+  
+public class Tree {  
+  
+    public static class Node {  
+        int data;  
+        Node left;  
+        Node right;  
+  
+        public Node(int data) {  
+            this.data = data;  
+            left = null;  
+            right = null;  
+        }  
+    }  
+  
+    static Node root;  // Static root node for the tree  
+  
+    public static void insert(Scanner sc) {  
+        System.out.println("Enter the data: ");  
+        int value = sc.nextInt();  
+        root = new Node(value);  // Use the class field 'root', no local declaration  
+        insert(sc, root);  
+    }  
+  
+    private static void insert(Scanner sc, Node node) {  
+        System.out.println("Do you want to enter to the left of " + node.data + "? (true/false)");  
+        boolean left = sc.nextBoolean();  
+        if (left) {  
+            System.out.println("Enter the data: ");  
+            int value = sc.nextInt();  
+            node.left = new Node(value);  
+            insert(sc, node.left);  // Recursively insert in the left subtree  
+        }  
+  
+        System.out.println("Do you want to enter to the right of " + node.data + "? (true/false)");  
+        boolean right = sc.nextBoolean();  
+        if (right) {  
+            System.out.println("Enter the data: ");  
+            int value = sc.nextInt();  
+            node.right = new Node(value);  
+            insert(sc, node.right);  // Recursively insert in the right subtree  
+        }  
+    }  
+  
+    public static void display() {  
+        display(root, "");  
+    }  
+  
+    public static void display(Node node, String indent) {  
+        if (node == null) {  
+            return;  // Base case: stop when we reach a null node  
+        }  
+        System.out.println(indent + node.data);  // Display the current node's data  
+        display(node.left, indent + "  ");  // Recur for the left subtree  
+        display(node.right, indent + "  ");  // Recur for the right subtree  
+    }  
+  
+    public static void main(String[] args) {  
+        Scanner sc = new Scanner(System.in);  // Create a scanner to take user input  
+        Tree tree = new Tree();  // Create an instance of Tree  
+        tree.insert(sc);  // Insert nodes into the tree  
+        tree.display();  // Display the tree structure  
+    }  
+}
+```
 
