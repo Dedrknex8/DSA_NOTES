@@ -82,3 +82,214 @@ public class Bigint {
     }  
 }
 ```
+
+## Zig zag
+
+```java
+
+
+class Solution {
+
+    public List<List<Integer>> zigzagLevelOrder(TreeNode root) {
+
+        List<List<Integer>> result = new ArrayList<>();
+
+  
+
+        // If the tree is empty
+
+        if (root == null) {
+
+            return result;
+
+        }
+
+  
+
+        // Use a queue for level order traversal
+
+        Queue<TreeNode> queue = new LinkedList<>();
+
+        queue.add(root); // Start with the root node
+
+        boolean reverse = false;
+
+  
+
+        while (!queue.isEmpty()) {
+
+            List<Integer> level = new ArrayList<>();
+
+            int size = queue.size(); // Number of nodes at the current level
+
+  
+
+            for (int i = 0; i < size; i++) {
+
+                TreeNode cur = queue.poll(); // Remove the node from the queue
+
+  
+
+                // Add node values in normal or reversed order based on `reverse`
+
+                if (reverse) {
+
+                    level.add(0, cur.val); // Add at the beginning for reverse order
+
+                } else {
+
+                    level.add(cur.val); // Add at the end for normal order
+
+                }
+
+  
+
+                // Always add left and right children in the same order to the queue
+
+                if (cur.left != null) {
+
+                    queue.add(cur.left);
+
+                }
+
+                if (cur.right != null) {
+
+                    queue.add(cur.right);
+
+                }
+
+            }
+
+  
+
+            // Add the current level to the result list
+
+            result.add(level);
+
+  
+
+            // Toggle the reverse flag for the next level
+
+            reverse = !reverse;
+
+        }
+
+  
+
+        return result;
+
+    }
+
+}
+```
+
+# Level order traversal ll
+
+Leetcode: https://leetcode.com/problems/binary-tree-level-order-traversal-ii/
+
+```java
+/**
+
+ * Definition for a binary tree node.
+
+ * public class TreeNode {
+
+ *     int val;
+
+ *     TreeNode left;
+
+ *     TreeNode right;
+
+ *     TreeNode() {}
+
+ *     TreeNode(int val) { this.val = val; }
+
+ *     TreeNode(int val, TreeNode left, TreeNode right) {
+
+ *         this.val = val;
+
+ *         this.left = left;
+
+ *         this.right = right;
+
+ *     }
+
+ * }
+
+ */
+
+class Solution {
+
+    public List<List<Integer>> levelOrderBottom(TreeNode root) {
+
+        List<List<Integer>> result = new ArrayList<>();
+
+  
+
+        //if tree is empty
+
+        if (root == null) {
+
+            return result;
+
+        }
+
+        //Use a queue for level order traversal
+
+        Queue<TreeNode> queue = new LinkedList<>();
+
+        queue.add(root); //start with root node
+
+  
+
+        while (!queue.isEmpty()) {
+
+            List<Integer> level = new ArrayList<>();
+
+  
+
+            int size = queue.size(); //hold the no of nodes in current level
+
+            for (int i = 0; i < size; i++) {
+
+                TreeNode cur = queue.poll(); //remove node from queue
+
+  
+
+                //add the current node's val level to current quele
+
+                level.add(cur.val);
+
+  
+
+                // if left child exist add
+
+                if (cur.left != null) {
+
+                    queue.add(cur.left);
+
+                }
+
+                if (cur.right != null) {
+
+                    queue.add(cur.right);
+
+                }
+
+            }
+
+            //add the overall node value here from beg
+
+            result.add(0, level);
+
+        }
+
+  
+  
+
+        return result;
+
+    }
+
+}
+```
