@@ -293,3 +293,66 @@ class Solution {
 
 }
 ```
+
+
+## Right side view 
+
+>Leetcode  : `https://leetcode.com/problems/binary-tree-right-side-view/submissions/1435983246 `
+
+```java
+List<Integer> result = new ArrayList<>();
+
+  
+
+        if(root == null){
+
+            return result;
+
+        }
+
+  
+
+        Queue<TreeNode> queue = new LinkedList<>();
+
+  
+
+        queue.add(root); //starts from root
+
+  
+
+        while(queue.isEmpty()){
+
+            List<Integer> level = new ArrayList<>();
+
+            int size = queue.size(); //hold the current no of nodes
+
+            for(int i =0; i < size;i++){
+
+                TreeNode curr = queue.poll();
+
+                if(i == size - 1){
+
+                    result.add(curr.val);
+
+                }
+
+                if(curr.left!=null){
+
+                    queue.add(curr.left);
+
+                }
+
+                if(curr.right!=null){
+
+                    queue.add(curr.right);
+
+                }
+
+            }
+
+        }
+
+         return result;
+
+    }
+```
