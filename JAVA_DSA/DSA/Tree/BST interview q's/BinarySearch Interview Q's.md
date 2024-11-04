@@ -356,3 +356,47 @@ List<Integer> result = new ArrayList<>();
 
     }
 ```
+
+## Check if a tree is symmetry or not
+
+Link : https://leetcode.com/problems/symmetric-tree/
+
+```java
+ public boolean isSymmetric(TreeNode root) {
+
+        // IF TREE IS EMPTY I.E IT'S A SYMMENTRY
+
+        if(root == null){return true;}
+
+  
+
+        return isMirror(root.left,root.right);
+
+    }
+
+    private boolean isMirror(TreeNode leftsub,TreeNode rightsub){
+
+        // IF BOTH ARE NULL MEANS SYMMETRY
+
+        if(leftsub == null && rightsub == null){
+
+            return true;
+
+        }
+
+        // IF ONE OF THEM IS NULL THEN => NOT SYMMETRY
+
+        if(leftsub == null || rightsub == null){
+
+            return false;
+
+        }
+
+        // RETURN AND CHECK IF  THEY ARE EQUAL AND THEN RECCURSION FOR CHIILD
+
+        return (leftsub.val ==  rightsub.val) && isMirror(leftsub.left,rightsub.right)
+
+        && isMirror(leftsub.right,rightsub.left);
+
+    }
+```
