@@ -131,3 +131,102 @@ public TreeNode invertTree(TreeNode root) {
 
     }
 ```
+
+# Flatern BST into linked list using preorder
+
+```java
+//START FROM ROOT NODE
+TreeNode current = root;
+
+  
+		//CHECK IF ROOT NODE IF EMPTY
+        while(current !=null){
+			// THEN TRAVERSE TO LEFT
+            if(current.left!=null){
+			//MAKE THE LEFT AS TEMP 
+                TreeNode temp = current.left;
+				// GO ON TILL FOUND THE .RIGHT AS NULL
+                while(temp.right != null){
+					
+                    temp = temp.right;
+
+                }
+				//WHEN FOUND THEN TEMP WILL BE ONE
+				//ABOVE MAKE IT'S RIGHT TO CURRENT 
+				//RIGHT 
+                temp.right = current.right;
+
+                current.right = current.left;
+					//MAKE IT LEFT AS NULL
+                current.left=null;
+
+            }
+			//MAKE CURRENT AS CURRENT RIGHT
+            current = current.right;
+
+        }
+
+    }
+```
+
+## Check if a binary tree is valid or not
+
+> 1.  TO be a valid it need to have two child 
+> 2. It's has to follow min and max rule
+
+```java
+public boolean isValidBST(TreeNode root) {
+
+        return helper(root,null,null);
+
+    }
+
+    private boolean helper(TreeNode node,Integer low,Integer high){
+
+        //  IF ROOT IS NULL THAT MEANS  TREE
+
+        if(node == null){
+
+            return true;
+
+        }
+
+  
+
+        //CHECK IF THE LOW IS NOT NULL
+
+        //AND IT'S VAL IS SAME AS LOW
+
+        if(low != null && node.val <=low){
+
+            return false;
+
+        }
+
+        //SAME FOR HIGH VALUE SHOULD BE LOWER THEN LIMIT
+
+        if(high!=null && node.val >=high){
+
+            return false;
+
+        }
+
+  
+
+        boolean leftSubTree = helper(node.left,low,node.val);
+
+        boolean rightSubTree = helper(node.right,node.val,high);
+
+  
+  
+
+        //ATLAST BOTH BOTH SHOULD BE TRUE
+
+  
+
+        return leftSubTree && rightSubTree;
+
+    }
+
+}
+```
