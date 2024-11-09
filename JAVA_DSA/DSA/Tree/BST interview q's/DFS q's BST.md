@@ -230,3 +230,37 @@ public boolean isValidBST(TreeNode root) {
 
 }
 ```
+## kth smallest node in BST
+
+```java
+public int kthSmallest(TreeNode root,int k){
+return helper(root,k).val;
+}
+private TreeNode  helper(TreeNode root,int k){
+if(root ==null ){
+return null;
+}
+
+//CHECK FOR LEFT SIDE
+
+TreeNode left = helper(root.left,k);
+
+if(left!=null){
+return root;
+}
+//INCRASE THE COUNTER
+count ++;
+
+//AND CHECK IF THAT COUNT == K
+
+if(COUNT == K){
+return root;
+}
+
+//CHEK FOR LEFT SIDE AND RETURN
+
+return helper(root.right,k);
+
+
+}
+```
