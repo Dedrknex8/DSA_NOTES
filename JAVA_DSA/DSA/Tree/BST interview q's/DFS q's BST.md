@@ -264,3 +264,180 @@ return helper(root.right,k);
 
 }
 ```
+
+
+## Construct a binary tree using inorder and preorder
+
+```java
+class Solution {
+
+    public TreeNode buildTree(int[] preorder, int[] inorder) {
+
+        if(preorder.length ==0 ){
+
+            return null;
+
+        }
+
+        //GETTING THE FIRST ELEMENT AS ROOT
+
+        int value= preorder[0];
+
+        int index = 0;
+
+        //RUN A LOOP  INORDER TO FIND THE ROOT
+
+  
+
+        for(int i=0;i<inorder.length;i++){
+
+            if(inorder[i]==value){
+
+               index = i;
+
+            }
+
+        }
+
+        //GETTING THE VALUE FOR RECCURSION ALSO
+
+        TreeNode node = new TreeNode(value);
+
+        //LEFT SIDE START FROM LEFT SIDE OF PREORDER
+
+        node.left = buildTree(Arrays.copyOfRange(preorder,1,index+1),Arrays.copyOfRange(inorder,0,index));
+
+  
+
+        // FOR RIGHT SIDE THE RECUSRION CALL WILL  START AFTER THE ROOT NODE
+
+        node.right = buildTree(Arrays.copyOfRange(preorder,index+1,preorder.length),Arrays.copyOfRange(inorder,index+1,inorder.length));
+
+  
+
+        return node;
+
+    }
+
+}
+
+```
+
+
+## Serilization && Deserilization of BST
+
+```java
+public String serialize(TreeNode root) {
+
+        //IF ROOT IS NULL RETURN NULL
+
+        if(root == null ){
+
+            return null;
+
+        }
+
+        //OTHERWISE CREATE A STACK TO STORE THE VAL
+
+        Stack<TreeNode> s = new Stack<>();
+
+        s.push(root);
+
+  
+
+        //CREATE A LIST OUT OF Arraylist
+
+        List<String> l = new ArrayList<>();
+
+  
+
+        while(!s.isEmpty()){
+
+            TreeNode t = s.pop();
+
+  
+
+            //IFF CURRENT NODE IS NULL, STORE MARKER
+
+                if (t == null){
+
+                    l.add("#");
+
+                }else{
+
+                    //STORE THE CURRENT NODE
+
+                    //rECURSION FOR ITS CHILD
+
+                    //PUSHING  RIGHT BECAUSE LEFT WLL COME FIRST OUT
+
+                    l.add(""+ t.val);
+
+                    s.push(t.right);
+
+                    s.push(t.left);
+
+                }
+
+        }
+
+        //ATLAST IN FILE SPARATE BY ,
+
+        return String.join(",",l);
+
+    }
+
+  
+
+    int t;
+
+    // Decodes your encoded data to tree.
+
+    public TreeNode deserialize(String data) {
+
+        if (data == null){
+
+            return null;
+
+        }
+
+        t = 0;
+
+        String[] arr = data.split(",");
+
+        return helper(arr);
+
+    }
+
+    private TreeNode helper(String[]arr){
+
+        if(arr[t].equals("#")){
+
+            return null;
+
+        }
+
+  
+
+        //CREATE THE NODE WITH THIS ITEM
+
+        //RECUR FOR CHILD
+
+        TreeNode root = new TreeNode(Integer.parseInt(arr[t]));
+
+        t++;
+
+        root.left = helper(arr);
+
+        t++;
+
+        root.right = helper(arr);
+
+        return root;
+
+  
+
+    }
+
+}
+```
