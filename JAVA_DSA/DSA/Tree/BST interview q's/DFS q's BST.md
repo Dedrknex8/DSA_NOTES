@@ -441,3 +441,205 @@ public String serialize(TreeNode root) {
 
 }
 ```
+
+
+## max bst path sum
+
+```java
+class Solution {
+
+    int ans = Integer.MIN_VALUE;
+
+    public int maxPathSum(TreeNode root) {
+
+        helper(root);
+
+        return ans;
+
+    }
+
+    private int helper(TreeNode root){
+
+        if(root == null){
+
+            return 0;
+
+        }
+
+        //RESCURSION FOR LEFT AND RIGHT
+
+        int left = helper(root.left);
+
+        int right = helper(root.right);
+
+  
+
+        ///THIS WILL IGNORE NEGATIVE VAL
+
+        left = Math.max(0,left);
+
+        right = Math.max(0,right);
+
+  
+
+        //THIS WILL GIVE MAX VALUE FROM THAT CURRENT  NODE FROM LEFT AND RIGHT
+
+        int pathSum = left + right  + root.val;
+
+  
+
+        //MAX OVERALL ANS
+
+        ans = Math.max(ans,pathSum);
+
+  
+
+        return Math.max(left,right)+root.val;
+
+    }
+
+}
+```
+
+## Path sum
+
+```java
+class Solution {
+
+    public boolean hasPathSum(TreeNode root, int targetSum) {
+
+        if(root == null) {
+
+            return false;
+
+        }
+
+  
+
+        //IF THE CURRENT NODE IS LEAF NODE
+
+        //AND VAL == TARGETSUM
+
+        if(root.val == targetSum && root.left == null && root.right == null){
+
+            return true;
+
+        }
+
+  
+
+        //REURSION FOR LEFT AND RIGHT
+
+        return hasPathSum(root.left,targetSum-root.val) || hasPathSum(root.right,targetSum-root.val);
+
+    }
+
+}
+```
+
+## Sum root to leaf
+
+```java
+class Solution {
+
+    public int sumNumbers(TreeNode root) {
+
+        return helper(root,0);
+
+    }
+
+    private int helper(TreeNode root,int sum){
+
+        if(root == null){
+
+            return 0;
+
+        }
+
+  
+
+        //SUM = PREV SUM *10 + CURRENT VALUE
+
+        sum = sum * 10 + root.val;
+
+  
+
+        if(root.left == null && root.right == null){
+
+            return sum;
+
+        }
+
+  
+
+        //ATLAST RETURN LEFT + RIGHT
+
+  
+
+        return helper(root.left,sum)+ helper(root.right,sum);
+
+  
+
+    }
+
+}
+```
+## PATH SUM II
+
+```JAVA
+class Solution {
+
+    public List<List<Integer>> pathSum(TreeNode root, int targetSum) {
+
+        List<List<Integer>> result = new ArrayList<>();
+
+        List<Integer> path = new ArrayList<>();
+
+        helper(root,targetSum,result,path);
+
+        return result;
+
+    }
+
+  
+
+    private void helper(TreeNode node,int targetSum,List<List<Integer>>result,List<Integer> path){
+
+        if(node == null){
+
+            return;
+
+        }
+
+  
+
+        //ADD THE CURRENT VAL TO THE PATH
+
+        path.add(node.val);
+
+  
+
+        //IF TARSUM EQ TO CURRENT VAL ADD TO RESULT
+
+        if(node.left == null && node.right == null  && targetSum ==node.val){
+
+            result.add(new ArrayList<>(path));
+
+        }else{
+
+            //RECUR FOR LEFR AND RIGHT
+
+            helper(node.left,targetSum - node.val ,result,path);
+
+            helper(node.right,targetSum - node.val ,result,path);
+
+        }
+
+        //BACKTRACK IF SUM IS NOT EQ TO TARSUM
+
+        path.remove(path.size()-1);
+
+    }
+
+}
+```
