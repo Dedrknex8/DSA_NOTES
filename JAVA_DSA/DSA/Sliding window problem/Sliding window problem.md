@@ -1,4 +1,5 @@
 
+
 ## Maximum points from a card
 
 >Approach : Take to pointer left and right sum and a maxSum
@@ -139,3 +140,167 @@ class Solution {
 
     }
 ```
+
+
+## max consecutive ones
+
+Problem : get the max consecutive one with a contrains of fliping at most k zeros in it
+
+>Approach : 
+
+1. Bruteforce : 
+	- for this run two loops i(from 0 to n) & j (from i to n)
+	- in 1st loop let a count off zero be zero
+	- 2nd loop check if the found any zero then increase the count of zero 
+	- And lastly if countZero <= k update len and maxLen
+```code
+public int longestOnes(int[] nums, int k) {
+
+        int len = 0;
+
+        int n = nums.length;
+
+        int maxLength = 0;
+
+        for(int i=0;i<n;i++){
+
+            int countZero = 0;
+
+            for(int j=i;j<n;j++){
+
+                if(nums[j] == 0){
+
+                    countZero++;
+
+                }
+
+                if(countZero<=k){
+
+                    len =  j -i +1;
+
+                    maxLength = Math.max(maxLength,len);
+
+                }
+
+            }
+
+        }
+
+        return maxLength;
+
+    }
+```
+
+2. Optimized approach : using left and right pointer
+
+```CODE
+class Solution {
+
+    public int longestOnes(int[] nums, int k) {
+
+        int len = 0;
+
+        int n = nums.length;
+
+        int maxLength = 0;
+
+        int left=0;
+
+        int right =0;
+
+        int zero = 0;
+
+        //RUN A WHILE TILL THE SIZE OF ARRAY
+
+        while(right < n){
+
+            if(nums[right] ==0 ){
+
+                zero++;
+
+            }
+
+
+            //SHRINK THE WINDOW UNITL THE NUM OF ZERO IS WITHIN LIM
+
+            while(zero > k){
+
+            if(nums[left]== 0){
+
+                zero--;
+
+            }
+
+            left++;
+
+            }
+
+            //UPDATE MAX LEN
+
+            len = right - left +1;
+
+            maxLength = Math.max(maxLength,len);
+
+            right++;
+
+        }
+
+        return maxLength;
+
+    }
+
+}
+```
+
+
+## Fruits into basket leetcode
+
+problem : add fruits of distincs element as long as there at most 2 types
+
+> Simple bruteforce approach
+
+```java
+class Solution {
+
+    public int totalFruit(int[] fruits) {
+
+        int maxLen =0;
+
+        int n = fruits.length;
+
+  
+
+        for(int i=0;i<n;i++){
+
+            HashSet<Integer> hash = new HashSet<>();
+
+            for(int j=i;j<n;j++){
+
+                hash.add(fruits[j]);
+
+  
+
+                if(hash.size() <= 2){
+
+                    maxLen = Math.max(maxLen,j-i+1);
+
+  
+
+                }
+
+                else
+
+                    break;
+
+            }
+
+        }
+
+        return maxLen;
+
+    }
+
+}
+```
+
+Done Upto fruit basket
