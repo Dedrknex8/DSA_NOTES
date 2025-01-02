@@ -4,19 +4,21 @@
     "type": "split",
     "children": [
       {
-        "id": "6974892e9bab7725",
+        "id": "fe8b08b7e455d786",
         "type": "tabs",
         "children": [
           {
-            "id": "91cabcffd1af2e98",
+            "id": "5c860f8b0d96cd31",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "DSA/Tree/Segmented tree.md",
+                "file": "DSA/Current posistion.md",
                 "mode": "source",
                 "source": false
-              }
+              },
+              "icon": "lucide-file",
+              "title": "Current posistion"
             }
           }
         ]
@@ -39,7 +41,9 @@
               "type": "file-explorer",
               "state": {
                 "sortOrder": "alphabetical"
-              }
+              },
+              "icon": "lucide-folder-closed",
+              "title": "Files"
             }
           },
           {
@@ -48,13 +52,15 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "reverse",
+                "query": "",
                 "matchingCase": false,
                 "explainSearch": false,
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical"
-              }
+              },
+              "icon": "lucide-search",
+              "title": "Search"
             }
           },
           {
@@ -62,7 +68,9 @@
             "type": "leaf",
             "state": {
               "type": "bookmarks",
-              "state": {}
+              "state": {},
+              "icon": "lucide-bookmark",
+              "title": "Bookmarks"
             }
           }
         ]
@@ -85,7 +93,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "DSA/Tree/Segmented tree.md",
+                "file": "DSA/String/String Buffer.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -93,7 +101,9 @@
                 "searchQuery": "",
                 "backlinkCollapsed": false,
                 "unlinkedCollapsed": true
-              }
+              },
+              "icon": "links-coming-in",
+              "title": "Backlinks for String Buffer"
             }
           },
           {
@@ -102,10 +112,12 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "DSA/Tree/Segmented tree.md",
+                "file": "DSA/String/String Buffer.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
-              }
+              },
+              "icon": "links-going-out",
+              "title": "Outgoing links from String Buffer"
             }
           },
           {
@@ -116,7 +128,9 @@
               "state": {
                 "sortOrder": "frequency",
                 "useHierarchy": true
-              }
+              },
+              "icon": "lucide-tags",
+              "title": "Tags"
             }
           },
           {
@@ -125,8 +139,10 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "DSA/Tree/Segmented tree.md"
-              }
+                "file": "DSA/String/String Buffer.md"
+              },
+              "icon": "lucide-list",
+              "title": "Outline of String Buffer"
             }
           }
         ]
@@ -146,44 +162,44 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "91cabcffd1af2e98",
+  "active": "5c860f8b0d96cd31",
   "lastOpenFiles": [
+    "DSA/Sliding window problem/Sliding window problem.md",
+    "DSA/Current posistion.md",
+    "Bug bounty/CSRF.md",
+    "Bug bounty/Cors Misconfiguration.md",
+    "Bug bounty/Target.md",
+    "Bug bounty/Methodlogy.md",
+    "DSA/Hash topics/Tree q's using hashmap.md",
+    "DSA/Hash topics/HUFFMAN CODING.md",
+    "DSA/Sliding window problem",
+    "DSA/Tree/BST interview q's/DFS q's BST.md",
+    "DSA/Tree/BST interview q's/BinarySearch Interview Q's.md",
     "DSA/Tree/Tree.md",
     "DSA/Tree/Segmented tree.md",
-    "DSA/Tree/AVL.md",
     "DSA/Tree/BinarySearch Tree.md",
+    "DSA/Hash topics/Sqrt decompostion.md",
+    "DSA/Hash topics/Radix sort.md",
+    "DSA/Hash topics/CountSort.md",
+    "DSA/Hash topics/Robin Karp DSA.md",
+    "DSA/Hash topics",
+    "DSA/Heap DSA/Heap.md",
+    "DSA/Heap DSA",
+    "DSA/Queue & Stack/Queue and stack implemention.md",
+    "DSA/Array/Binarysearch.md",
+    "DSA/Tree/AVL.md",
+    "DSA/Tree/BST interview q's",
+    "DSA/String/String large integer.md",
+    "DSA/String/String Buffer.md",
+    "DSA/String",
     "Pasted image 20241007092656.png",
     "DSA/Link list/Linked List.md",
     "DSA/Tree",
     "DSA/Queue & Stack/Simple queue game.md",
-    "DSA/Queue & Stack/Queue and stack implemention.md",
     "DSA/Queue & Stack",
     "DSA/Recursion/Recursion with array.md",
-    "DSA/Array/Binarysearch.md",
-    "DSA/Array/LinearSearch.md",
-    "DSA/Recursion/What is Recusrion.md",
-    "DSA/Recursion/Strings operation with recu.md",
-    "DSA/Recursion/Permutation.md",
-    "DSA/Array/Array.md",
-    "DSA/Array/Sorting/Sorting.md",
-    "DSA/Link list/Doubly LL.md",
     "DSA/Link list",
-    "Bug bounty/Cors Misconfiguration.md",
-    "DSA/Untitled.md",
     "DSA/Array/Sorting",
-    "DSA/Pattern/pattern q's.md",
-    "DSA/Pattern/Untitled.md",
-    "DSA/Bit wise codes/MATHS.md",
-    "DSA/Bit wise codes/Bit wise.md",
-    "DSA/Array/2 D array.md",
-    "DSA/Recursion",
-    "DSA/Pattern",
-    "DSA/Bit wise codes",
-    "DSA/Array",
-    "DSA",
-    "Bug bounty/Target.md",
-    "Shell scripting/Scripting.md",
-    "Shell scripting/Project.md",
-    "Shell scripting"
+    "DSA/Recursion"
   ]
 }

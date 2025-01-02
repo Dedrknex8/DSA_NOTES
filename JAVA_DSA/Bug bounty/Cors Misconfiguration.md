@@ -1,7 +1,7 @@
 
 
 - Cors is Cross origin  Resource sharing is policy that uses http headers to define the origin that the browser allow to access the resources
-- Eg Domain `A` -> want to acess domain `B` then it  configures cors policy to allow Domain A
+- Eg Domain `A` -> want to access domain `B` then it  configures cors policy to allow Domain A
 
 > Cors make use of two http headers
 
