@@ -24,4 +24,4 @@
 1. Read : 
 2. Update
 3. Delete: 
-	- Syntax : `DROP DATABSE db_name`; 
+	- Syntax : `DROP DATABSE db_name`;

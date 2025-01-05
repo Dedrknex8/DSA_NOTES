@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "SQL/SQL.md",
+                "file": "Projects/Todo app with calendar sync/LEARNING nextjs.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "SQL"
+              "title": "LEARNING nextjs"
             }
           }
         ]
@@ -164,8 +164,9 @@
   },
   "active": "5c860f8b0d96cd31",
   "lastOpenFiles": [
-    "Projects/Todo app with calendar sync/Todo app with google calendar sync.md",
     "SQL/SQL.md",
+    "Projects/Todo app with calendar sync/LEARNING nextjs.md",
+    "Projects/Todo app with calendar sync/Todo app with google calendar sync.md",
     "SQL",
     "DSA/Current posistion.md",
     "Projects/Todo app with calendar sync",
@@ -198,7 +199,6 @@
     "DSA/String/String Buffer.md",
     "DSA/String",
     "Pasted image 20241007092656.png",
-    "DSA/Link list/Linked List.md",
     "DSA/Tree",
     "DSA/Queue & Stack"
   ]

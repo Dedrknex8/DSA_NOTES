@@ -102,3 +102,5 @@ function (exports,require,module,__filename,__dirname){
 2. cli `npm install`
 3. give entery index like index.js {every code will render from here like index.html}
 4. Done
+
+## Path module
