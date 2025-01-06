@@ -104,4 +104,20 @@ function (exports,require,module,__filename,__dirname){
 4. Done
 
 ## Path module
-	chachaghcasca
+
+> Path modules provides utility to work with path and directories 
+
+#### Now the q's arise what is the utitlity here?
+> To answer this the utility nothing more of a function which provide the dir realted command and queries
+
+> Let's try to console the current path 
+
+```node
+const path = require("path");
+	console.log("current Dir is : ",path.dirname(__filename)); //this will get the absolute path of the file
+
+//LET'S GET THE FILE NAME
+
+console.log("file name : ",path.basename(__filename)); //it will print index.js
+```
+
