@@ -1,6 +1,20 @@
 
 # Date 05-01-25 | Rohit Tiwari
 
+# Topics to be covered
+
+ - [ ] Installation
+ - [ ] Node module system
+ - [ ] Path module
+ - [ ] File System
+ - [ ] Http module
+ - [ ] calllbacks and callback hell
+ - [ ] Promises
+ - [ ] Async Await
+ - [ ] Event emitter
+ - [ ] 
+
+
 ## Installation
 
 > Started my first day with installation of node js 
