@@ -62,7 +62,7 @@ const maths = require("./arithmatic");
 console.log(arithmatic.add(1.2));
 ```
 
-## To GET THE OUPUT IN CLI\
+## To GET THE OUPUT IN CLI
 
 1. open terminal in same dir
 2. node index.js
@@ -127,11 +127,24 @@ function (exports,require,module,__filename,__dirname){
 > Let's try to console the current path 
 
 ```node
-const path = require("path");
-	console.log("current Dir is : ",path.dirname(__filename)); //this will get the absolute path of the file
+const { dir } = require('console');
 
-//LET'S GET THE FILE NAME
+const path = require('path');
 
-console.log("file name : ",path.basename(__filename)); //it will print index.js
+//LET'S PRINT CURRENT DIR NAME  
+
+console.log("Current dir path is : ",path.dirname(__filename));
+
+console.log("Current file name is : ",path.basename(__filename));
+
+//LET'S PRINT THE CURRENT FILE EXTENSION NAME  
+
+console.log("Current file ext : ",path.extname(__filename))
+//LET'S TRY TO JOIN PATH OF DIR
+
+const pathToBejoined = path.join('/Dummy',"/blob","/root","root.txt")
+
+
+console.log(path.join(pathToBejoined)); // THIS WILL JOIN THE GIVEN DIR TO THE PATHS
 ```
 
