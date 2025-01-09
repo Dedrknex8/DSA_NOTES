@@ -148,3 +148,8 @@ const pathToBejoined = path.join('/Dummy',"/blob","/root","root.txt")
 console.log(path.join(pathToBejoined)); // THIS WILL JOIN THE GIVEN DIR TO THE PATHS
 ```
 
+
+
+## installed and run some command in nodejs 
+
+> tommorow finfish whole nextjs course of 11 hour target
