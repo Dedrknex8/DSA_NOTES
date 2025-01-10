@@ -153,3 +153,91 @@ console.log(path.join(pathToBejoined)); // THIS WILL JOIN THE GIVEN DIR TO THE P
 ## installed and run some command in nodejs 
 
 > tommorow finfish whole nextjs course of 11 hour target
+
+
+## File system
+
+> It's is a way to create a file or read a file in node js
+
+```node
+//FILE SYSTEM
+
+const fs = require('fs');
+
+const path = require('path');
+  
+const  subdir = 'subdir';
+
+const filename = 'test.txt';
+
+const content = 'Hi there! A sample text here';
+
+//CREATE THE FULL PATH FOR THE FILE
+
+const filePath = path.join(__dirname,subdir,filename);
+
+//CREATE THE DIR FIRST
+
+fs.mkdir(path.join(__dirname,subdir), {recursive:true}, (err)=>{
+    if (err){
+
+        console.log(`error in creating the file $(err)`);
+
+    } //RECUSVE : TRUE ENSURE THAT ROOT DIR EXISTS
+
+  
+//CREATE AND WRITE THE FILE
+
+
+fs.writeFile(filePath,content,(err)=>{
+
+    if (err){
+
+        console.log("error wirting file",err);
+
+    }else{
+
+        console.log(`file created successfully at $(filepath)`)
+
+    }
+
+})
+
+});
+```
+
+> FLOW OF THE CODE EXECUTED HERE
+1. It will join the path
+2. it will create the subdir fast 
+3. Then i will create.txt file 
+4. then write the content
+
+## Read file in node
+
+```node
+const fs = require('fs');
+
+const path = require('path');
+
+const subdir = 'subdir';
+
+const filename = 'test.txt';
+
+const filePath = path.join(__dirname,subdir,filename);
+
+//READ THE FILE
+
+fs.readFile(filePath, 'utf8',(err,data)=>{
+
+    if(err){
+
+        console.log('error reading file: ',err);
+
+    }else{
+
+        console.log('File content',data);
+
+    }
+
+});
+```
