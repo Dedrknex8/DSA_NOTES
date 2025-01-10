@@ -241,3 +241,85 @@ fs.readFile(filePath, 'utf8',(err,data)=>{
 
 });
 ```
+
+```node
+//LET'S APPEDND SOMETING TO THE FILE CONTENT
+
+fs.appendFileSync(filePath, '\nHello again this time loading ...');
+console.log('file appending');
+```
+
+## Synchronious way of create a file
+
+```node
+const fs = require('fs');
+
+const path = require('path');
+
+const dataFolder = path.join(__dirname, "nwFolder"); // create nwFolder
+if(!fs.existsSync(dataFolder)){
+
+    fs.mkdirSync(dataFolder);
+
+    console.log("file created");
+
+}
+
+//This to write data on file
+
+const filePath = path.join(dataFolder,'exmaple.txt');
+//sync file
+
+fs.writeFileSync(filePath,"hello world");
+
+console.log("file created");
+```
+
+# [HTTP](obsidian://open?vault=JAVA_DSA&file=Projects%2FTodo%20app%20with%20calendar%20sync%2FHTTP%20METHOD%20node)
+
+
+# Callback
+
+> Callback is like a itself just like function call in java 
+> CallbackHell means nested call back
+
+## PROMISE
+> Promise is a better way to handle callbacks in async functions
+
+```node
+  
+function divideNum(num1,num2){
+
+    return new Promise((resolve, reject) => {
+
+        if(num2 ===0){
+
+            reject("cannot dividde by 0");
+
+        }else{
+
+            resolve(num1/num2)
+
+        }
+
+    })
+
+}
+
+  
+
+divideNum(5,0).then(result => console.log("result is",result)).catch(error => {
+
+    console.log(error, "err");
+
+})
+```
+
+> Note :  for each & every async fn there's a promise return 
+
+
+## ASYNC AWAIT
+
+> It's used to make wait a async function until it gets resolved
+> Used to try and catch error
+
