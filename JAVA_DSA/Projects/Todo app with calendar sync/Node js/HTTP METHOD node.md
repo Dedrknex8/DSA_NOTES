@@ -11,14 +11,7 @@ const server = http.createServer((req,res)=>{
     console.log(req, 'req');
 
   
-
-    //IT GIVE BACK THE RESPONSE TO THE WERBBROWSER
-
-    res.writeHead(200, {"Content-Type": "text/plain"});
-
-    //THIS IS THE MESSAGE
-
-    res.end("HI there welcome to my first http server!")
+	res.send('hello world);
 
 });
 
@@ -34,3 +27,4 @@ server.listen(port, ()=>{
 
 }); //server.listen is a method to listen
 ```
+
