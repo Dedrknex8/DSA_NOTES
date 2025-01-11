@@ -106,3 +106,99 @@ app.listen(port,()=>{
 })
 ```
 
+
+## get single items form the products 
+
+> Get product/id from here
+
+```node
+const express = require('express')
+const app = express();
+app.get("/products",(req,res)=>{
+
+    const products = [
+
+        {
+
+            id : 1,
+
+            name: 'new product'
+
+        },
+
+        {
+
+            id : 2,
+
+            name: 'two product'
+
+        },
+
+        {
+
+            id : 3,
+
+            name: '3 product'
+
+        }
+
+    ]
+
+    res.json(products);
+
+})
+//LET'S GET SINGLE PRODUCT AS /product/?id=1
+
+app.get('/products/:id',(req,res) =>{
+
+    const productId = parseInt(req.params.id);
+
+    const products = [
+
+        {
+
+            id : 1,
+
+            name: 'new product'
+
+        },
+
+        {
+
+            id : 2,
+
+            name: 'two product'
+
+        },
+
+        {
+
+            id : 3,
+
+            name: '3 product'
+
+        }]
+
+        const getSingleProduct = products.find(product => product.id === productId);
+
+  
+
+        if(getSingleProduct){
+
+            res.json(getSingleProduct)
+
+        }else{
+
+            res.status(404).send('product is not found');
+
+        }
+
+})
+
+const port = 2929;
+app.listen(port, ()=>{
+
+    console.log("Server is runnig on port 2929");
+
+})
+```
