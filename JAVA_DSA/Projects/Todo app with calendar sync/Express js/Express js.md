@@ -202,3 +202,11 @@ app.listen(port, ()=>{
 
 })
 ```
+
+## App module in express js
+
+>The `app.use()` method in Express.js is used to **register middleware functions** or **mount middleware** at specific paths for your application. Middleware functions are functions that have access to the request (`req`), response (`res`), and the next middleware function (`next`) in the application's request-response cycle.
+
+```noed
+i will update the code later on
+```
