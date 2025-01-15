@@ -15,3 +15,10 @@
 
 > [link](https://github.com/Dedrknex8/bookStore)
 
+
+## What are the outcomes of this project
+
+> Learned how to merge node express mongo and postman with nodemon.
+
+> At last had a lot of fun learning it hope u enjoy this project
+> 
