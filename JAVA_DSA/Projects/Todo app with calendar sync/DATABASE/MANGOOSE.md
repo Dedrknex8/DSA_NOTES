@@ -1,4 +1,4 @@
-
+	
 ## TO install mangoose in CLI
 
 `npm i mangosose`
