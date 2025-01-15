@@ -248,3 +248,30 @@ async function runQueryExample(){
 
 runQueryExample();
 ```
+
+## To delete a user
+
+```node
+ const deletedUser = await user.findByIdAndDelete(newUser._id);
+         console.log('User deleted -> ',deletedUser);
+```
+## Update a user
+```node
+ const updateUser = await user.findByIdAndUpdate(newUser._id,{
+
+            $set : {age : 100},
+
+            $push : {tags : "updated"},
+
+        },
+
+        {
+
+            new : true //this will push the update
+
+        }
+
+    );
+
+    console.log("User updated sucessfully");
+```
