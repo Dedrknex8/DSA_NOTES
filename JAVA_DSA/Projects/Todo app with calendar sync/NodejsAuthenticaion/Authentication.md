@@ -20,7 +20,7 @@
 ## Schema 
 > For this authentication we have to define the schema.
  
->For this we need a user with  email,pass,username
+>For this we need a user with  `email,pass,username`
 
 ### Detail description for our schema
 
@@ -32,4 +32,14 @@
 ### For password
 > We have to have to implement a  `hashing property`
 
+> using bcrypt npm package for that will salt a text/plain passwd into a hashed password
+
+> To read more about click on this -> [link](https://www.npmjs.com/package/bcrypt)
 > 
+
+## Timestamp
+
+>When `timestamps: true` is specified in a Mongoose schema, it automatically creates two fields in your documents:
+
+1. **`createdAt`**: A `Date` field that stores the timestamp when the document was first created.
+2. **`updatedAt`**: A `Date` field that stores the timestamp when the document was last updated.
