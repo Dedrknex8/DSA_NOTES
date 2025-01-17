@@ -43,3 +43,5 @@
 
 1. **`createdAt`**: A `Date` field that stores the timestamp when the document was first created.
 2. **`updatedAt`**: A `Date` field that stores the timestamp when the document was last updated.
+
+## Installing bycrypt for node js
