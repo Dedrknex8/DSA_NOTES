@@ -35,6 +35,8 @@
 > using bcrypt npm package for that will salt a text/plain passwd into a hashed password
 
 > To read more about click on this -> [link](https://www.npmjs.com/package/bcrypt)
+
+ Trying insralling it not working
 > 
 
 ## Timestamp
