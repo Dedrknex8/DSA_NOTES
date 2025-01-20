@@ -29,7 +29,7 @@
 >passwd : strong pass, encrypt.
 >role : either be a user or an  admin `use enum for it`,use default to be a user.
 
-### For password
+# For password
 > We have to have to implement a  `hashing property`
 
 > using bcryptjs npm package for that will salt a text/plain passwd into a hashed password
@@ -47,6 +47,11 @@
 > For that use [jsonwebtoken](https://npmjs.com/package/jsonwebtoken)
 > Login part done !
 
+
+`Summary` : 
+	what have i learned so far, I have create a simple login and register part where i used the register part to create a user with role that role with either be a admin or user they two endpoint `home` & `admin` . The home page can be accessed by the admin and user[`note u have to login first`] but the admin page can only be accessed by admin role user.
+	How implemented this used middleware,bcryptjs -> to hash the pasword , jsonwebtoken -> to create a token that can be used to authorized a user to the site so that they can access the page as required. Refenrence to the [page](https://github.com/Dedrknex8/Authenticaion-js)
+	At the learning and practicising makes u perfect ! Don't fear face the challenge  
 ### What after login
 
 > Two options either the user is admin or a normal user if normal user then add some restrictions to it 
