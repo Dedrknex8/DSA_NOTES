@@ -4,21 +4,21 @@
     "type": "split",
     "children": [
       {
-        "id": "fe8b08b7e455d786",
+        "id": "c90ba6e75fb900e9",
         "type": "tabs",
         "children": [
           {
-            "id": "5c860f8b0d96cd31",
+            "id": "7dbe468ee222d614",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Projects/Todo app with calendar sync/LEARNING nextjs.md",
+                "file": "Projects/Todo app with calendar sync/NodejsAuthenticaion/Authentication/Authentication.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "LEARNING nextjs"
+              "title": "Authentication"
             }
           }
         ]
@@ -162,15 +162,36 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "5c860f8b0d96cd31",
+  "active": "7dbe468ee222d614",
   "lastOpenFiles": [
+    "Projects/Todo app with calendar sync/NodejsAuthenticaion/Authentication/Controllers.md",
+    "Projects/Todo app with calendar sync/NodejsAuthenticaion/Authentication/Authentication.md",
+    "Projects/Todo app with calendar sync/NodejsAuthenticaion/Authentication",
+    "prodcheck.txt~",
+    "4913",
+    "Projects/Todo app with calendar sync/BookStoreApi/BookStoreApi.md",
+    "Projects/Todo app with calendar sync/NodejsAuthenticaion",
+    "Projects/Todo app with calendar sync/BookStoreApi/sever.js.md",
+    "Projects/Todo app with calendar sync/DATABASE/MANGOOSE.md",
+    "Projects/Todo app with calendar sync/Express js/Express js.md",
+    "Projects/Todo app with calendar sync/BookStoreApi",
+    "Projects/Todo app with calendar sync/Rest API dev/Rest Api.md",
+    "Projects/Todo app with calendar sync/DATABASE",
+    "Projects/Todo app with calendar sync/Rest API dev/CRUD method in rest api.md",
+    "Projects/Todo app with calendar sync/Express js/EJS.md",
+    "Projects/Todo app with calendar sync/Rest API dev",
+    "Projects/Todo app with calendar sync/Express js/Middleware.md",
+    "Projects/Todo app with calendar sync/Node js/EventEmitter.md",
+    "Projects/Todo app with calendar sync/Node js/HTTP METHOD node.md",
+    "Projects/Todo app with calendar sync/Node js/LEARNING Nodejs.md",
+    "Projects/Todo app with calendar sync/Node js",
+    "Projects/Todo app with calendar sync/Express js",
+    "Untitled.md",
+    "Projects/Untitled.md",
     "SQL/SQL.md",
-    "Projects/Todo app with calendar sync/LEARNING nextjs.md",
     "Projects/Todo app with calendar sync/Todo app with google calendar sync.md",
     "SQL",
     "DSA/Current posistion.md",
-    "Projects/Todo app with calendar sync",
-    "Projects",
     "DSA/Sliding window problem/Sliding window problem.md",
     "Bug bounty/CSRF.md",
     "Bug bounty/Cors Misconfiguration.md",
@@ -178,28 +199,7 @@
     "Bug bounty/Methodlogy.md",
     "DSA/Hash topics/Tree q's using hashmap.md",
     "DSA/Hash topics/HUFFMAN CODING.md",
-    "DSA/Sliding window problem",
     "DSA/Tree/BST interview q's/DFS q's BST.md",
-    "DSA/Tree/BST interview q's/BinarySearch Interview Q's.md",
-    "DSA/Tree/Tree.md",
-    "DSA/Tree/Segmented tree.md",
-    "DSA/Tree/BinarySearch Tree.md",
-    "DSA/Hash topics/Sqrt decompostion.md",
-    "DSA/Hash topics/Radix sort.md",
-    "DSA/Hash topics/CountSort.md",
-    "DSA/Hash topics/Robin Karp DSA.md",
-    "DSA/Hash topics",
-    "DSA/Heap DSA/Heap.md",
-    "DSA/Heap DSA",
-    "DSA/Queue & Stack/Queue and stack implemention.md",
-    "DSA/Array/Binarysearch.md",
-    "DSA/Tree/AVL.md",
-    "DSA/Tree/BST interview q's",
-    "DSA/String/String large integer.md",
-    "DSA/String/String Buffer.md",
-    "DSA/String",
-    "Pasted image 20241007092656.png",
-    "DSA/Tree",
-    "DSA/Queue & Stack"
+    "Pasted image 20241007092656.png"
   ]
 }

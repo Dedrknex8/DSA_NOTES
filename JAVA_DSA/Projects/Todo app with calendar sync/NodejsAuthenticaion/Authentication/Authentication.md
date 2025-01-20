@@ -45,7 +45,11 @@
 
 > Need to create a json web token in order to user to login 
 > For that use [jsonwebtoken](https://npmjs.com/package/jsonwebtoken)
-> 
+> Login part done !
+
+### What after login
+
+> Two options either the user is admin or a normal user if normal user then add some restrictions to it 
 
 
 
