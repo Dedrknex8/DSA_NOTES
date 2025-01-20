@@ -32,12 +32,22 @@
 ### For password
 > We have to have to implement a  `hashing property`
 
-> using bcrypt npm package for that will salt a text/plain passwd into a hashed password
+> using bcryptjs npm package for that will salt a text/plain passwd into a hashed password
 
 > To read more about click on this -> [link](https://www.npmjs.com/package/bcrypt)
 
- Trying insralling it not working
+ 
+> To install use `npm i bcryptjs`  
+
+### How it's working
+
+> first we will let user enter a passwd then we will salt it and send it to database for `/register part`
+
+> Need to create a json web token in order to user to login 
+> For that use [jsonwebtoken](https://npmjs.com/package/jsonwebtoken)
 > 
+
+
 
 ## Timestamp
 
@@ -47,3 +57,5 @@
 2. **`updatedAt`**: A `Date` field that stores the timestamp when the document was last updated.
 
 ## Installing bycrypt for node js
+
+## Done with the login part
