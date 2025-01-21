@@ -4,3 +4,6 @@
 ## This note will cover about file handling and uploading it to the server using node js 
 
 > This part will be intirgate with the authentication part
+
+>Used to new library `cloudinary` is used to manage the image upload realted stuff && and `multer` for /multi/form-data so that i can upload image files
+>
