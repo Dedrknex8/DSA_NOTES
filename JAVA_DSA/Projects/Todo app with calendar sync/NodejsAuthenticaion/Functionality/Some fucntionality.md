@@ -94,4 +94,99 @@ const changePassword = async(req,res)=>{
 ## Delete the uploaded file
 
 > To delete that file we need to delete it from the cloudinary and mongoDB databases
-> 
+
+
+```node
+const deleteImageController = async(req,res)=>{
+
+    try {
+
+        const getCurrentImageToBEDeleted = req.params.id;
+
+        const userId = req.userInfo.userId;
+
+        //GET THE CURRENT IMAGE TO DELETE
+
+        const image = await Image.findById(getCurrentImageToBEDeleted);
+
+  
+
+        if(!image){
+
+            return res.status(400).json({
+
+                success : false,
+
+                messasge : "Can't find image.Please check the image Id to be deleted"
+
+            })
+
+        };
+
+        // Check if this image is uploaded by the current USer
+
+        if(image.uploadedBy.toString() !== userId){
+
+            return res.status(403).json({
+
+                success : false,
+
+                messasge : "Unauthorized access"
+
+            })
+
+        }
+
+  
+
+        // Delete this imageFrom cloudinary
+
+        await cloudinary.uploader.destroy(image.publicId);
+
+  
+
+        //delete this image from mongo db
+
+        await Image.findByIdAndUpdate(getCurrentImageToBEDeleted);
+
+  
+
+        // //update and save in mongo db
+
+        // await image.save();
+
+  
+
+        res.status(200).json({
+
+            success: true,
+
+            message : "Image deleted sucesfully"
+
+        });
+
+  
+  
+
+    } catch (error) {
+
+        console.log(error);
+
+        res.status(500).json({
+
+            success : false,
+
+            messasge : "Some went wrong in deleting image"
+
+        })
+
+    }
+
+}
+```
+
+## Image-route
+
+```node
+router.delete('/:id', authmiddleware, isAdminUser, deleteImageController);
+```
