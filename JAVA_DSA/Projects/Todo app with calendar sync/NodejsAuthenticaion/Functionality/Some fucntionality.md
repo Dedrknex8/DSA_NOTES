@@ -190,3 +190,77 @@ const deleteImageController = async(req,res)=>{
 ```node
 router.delete('/:id', authmiddleware, isAdminUser, deleteImageController);
 ```
+
+## Fetch-image
+
+```node
+//Fetch Image
+
+const fetchPage = async(req,res)=>{
+
+    try {
+
+        const page = parseInt(req.query) || 1;
+
+        const limit = parseInt(req.query.limit) || 5; //default 5 images in one page
+
+        const imageTobeSkipped = (page-1) * limit;
+
+        const sortBy = req.query.sortBy || 'createdAt';
+
+        const sortOrder = req.query.sortOrder == 'asc' ?1 :-1;
+
+        const totalImages = await Image.countDocuments();
+
+        const totalPages = Math.ceil(totalImages / limit);
+
+        const sortObj = {};
+
+        sortObj[sortBy] = sortOrder;
+
+        const image = await Image.find().sort(sortObj).skip(imageTobeSkipped).limit(limit);
+
+        if(image){
+
+            res.status(200).json({
+
+                success : true,
+
+                currentPage : page,
+
+                totalPages  : totalPages,
+
+                totalImages : totalImages,
+
+                data : image,
+
+            })
+
+        }else{
+
+            return res.status(400).json({
+
+                success : false,
+
+                message : "Cannt find any images"
+
+            })
+
+        }
+
+    } catch (error) {
+
+        console.log(error);
+
+        res.status(500).json({
+
+            success: false,
+
+            message : "Something went wrong in fetching image"
+
+        })
+
+    }
+
+}
+```
