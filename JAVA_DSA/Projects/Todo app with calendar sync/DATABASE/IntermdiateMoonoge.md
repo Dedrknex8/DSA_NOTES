@@ -5,7 +5,7 @@
 - [x] Understanding the aggregation pipeline
 - [x] Using common aggreagtaion operators
 - [x] understanding document references
-- [ ] Populating referenced documents
+- [x] Populating referenced documents
 
 
 ## Agregation concept
@@ -488,3 +488,11 @@ router.get('/:id',getbookAuthor);
 
 module.exports = router;
 ```
+
+
+
+
+
+## Have to create some new cool concept && Assingment
+
+> Create CRUD method here CU is done RD have to do  
