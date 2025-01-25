@@ -2,9 +2,9 @@
 
 ## Topic to be covered
 
-- [ ] Understanding the aggregation pipeline
-- [ ] Using common aggreagtaion operators
-- [ ] understanding document references
+- [x] Understanding the aggregation pipeline
+- [x] Using common aggreagtaion operators
+- [x] understanding document references
 - [ ] Populating referenced documents
 
 
@@ -273,4 +273,218 @@ const productAnalysis = async(req,res) =>{
   
 
 module.exports  =  { insertProduct,getAllProduct,productAnalysis };
+```
+
+## Document referencing
+
+> For a document to be referenced we have crated two models one book and other author
+> The author will ref the book section i.e using book we can find the author of that book
+
+
+### auhtor.js
+
+```node
+const mongoose = require('mongoose');
+
+  
+
+const AuthorSchema = new mongoose.Schema({
+
+    name : String,
+
+    bio : String,
+
+});
+
+  
+
+module.exports = mongoose.model("Author",AuthorSchema);
+```
+### book.js
+
+```node
+const mongoose = require('mongoose');
+
+const Author = require('./author');
+
+const bookSchema = new mongoose.Schema({
+
+    title : String,
+
+    author : {
+
+        type : mongoose.Schema.Types.ObjectId, // auhtor id
+
+        ref : 'Author' //this will refer to the author
+
+    }
+
+})
+
+  
+
+module.exports = mongoose.model('Book',bookSchema);
+```
+
+## controllers 
+> For creating author,book, and getiing author by books
+
+```node
+const Author = require('../Modells/author');
+
+const Book = require('../Modells/book');
+
+  
+  
+
+const createAuthor = async(req,res) =>{
+
+    try {
+
+        //get author deatils from req.body and appened it
+
+  
+
+        const author = new Author(req.body);
+
+        await author.save(); //save in DB
+
+        res.status(200).json({
+
+            sucess : true,
+
+            message : "New author added sucessfully",
+
+            data : author,
+
+        });
+
+    } catch (error) {
+
+        console.error(error);
+
+        res.status(500).json({
+
+            sucess : false,
+
+            message : "somethin went wrong when Auhtor"
+
+        })
+
+    }
+
+}
+
+const createBook = async(req,res) =>{
+
+    try {
+
+        const book = new Book(req.body);
+
+        await book.save(); //save in DB
+
+        res.status(200).json({
+
+            sucess : true,
+
+            message : "New book added sucessfully",
+
+            data : book,
+
+        });
+
+    } catch (error) {
+
+        console.error(error);
+
+        res.status(500).json({
+
+            sucess : false,
+
+            message : "somethin went wrong when Book"
+
+        })
+
+    }
+
+}
+
+  
+
+const getbookAuthor = async(req,res)=>{
+
+    try {
+
+        //Find the bookl
+
+        const book = await Book.findById(req.params.id).populate('author');
+
+        //.populate means the book id will ref to the author
+  
+
+        if(!book){
+
+            return res.status(400).json({
+
+                sucess : false,
+
+                message : "No book exists for this id",
+
+            });
+
+        }
+
+         res.status(200).json({
+
+            sucess : true,
+
+            message : "book found",
+
+            data : book,
+
+        })
+
+    } catch (error) {
+
+        console.error(error);
+
+        res.status(500).json({
+
+            sucess : false,
+
+            message : "somethin went wrong when Book"
+
+        })
+
+    }
+
+}
+
+module.exports = { createAuthor,createBook,getbookAuthor };
+```
+
+## Book routes
+
+```node
+const express = require('express');
+
+  
+
+const { createAuthor,createBook,getbookAuthor } = require("../controllers/book-controller");
+
+  
+
+const router = express.Router();
+
+  
+
+router.post('/author',createAuthor);
+
+router.post('/book',createBook);
+
+router.get('/:id',getbookAuthor);
+
+  
+
+module.exports = router;
 ```
