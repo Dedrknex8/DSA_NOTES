@@ -12,3 +12,8 @@
 
 1. Firstly we need node js and express and then we need to install socket.io to install it use the following command `npm i socket.io`
 2. import it as a req header in nodejs
+
+Some basic command to keep it mind
+
+to emit a broadcast use `io.emitt("join",username)`
+to recive a emit use `socket.on("join",(user)=>{anycode here})`
