@@ -132,7 +132,7 @@ app.delete('/delete/:id',(req,res) =>{
 
         req.status(404).json({
 
-            messsage : "cannot finf book"
+            messsage : "cannot find book"
 
         })
 

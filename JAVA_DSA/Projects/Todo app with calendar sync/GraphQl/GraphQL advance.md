@@ -90,3 +90,10 @@ async function startServer() {
 
 startServer();
 ```
+
+
+## Now change the path in resolver to new modells instead of dummy data used previously
+
+That's it now we can use crud commands to learn more 
+
+[link](https://github.com/Dedrknex8/AdvanceGraphqlwithMongo)
