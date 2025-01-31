@@ -4,21 +4,21 @@
     "type": "split",
     "children": [
       {
-        "id": "c90ba6e75fb900e9",
+        "id": "080ebc94c458dfe9",
         "type": "tabs",
         "children": [
           {
-            "id": "7dbe468ee222d614",
+            "id": "73b31e267407b431",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Projects/Todo app with calendar sync/NodejsAuthenticaion/Authentication/Authentication.md",
+                "file": "DSA/Sliding window problem/Sliding window problem.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "Authentication"
+              "title": "Sliding window problem"
             }
           }
         ]
@@ -52,7 +52,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "",
+                "query": "longest",
                 "matchingCase": false,
                 "explainSearch": false,
                 "collapseAll": false,
@@ -73,7 +73,8 @@
               "title": "Bookmarks"
             }
           }
-        ]
+        ],
+        "currentTab": 1
       }
     ],
     "direction": "horizontal",
@@ -162,44 +163,44 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "7dbe468ee222d614",
+  "active": "ae1821e1fdaa2bea",
   "lastOpenFiles": [
-    "Projects/Todo app with calendar sync/NodejsAuthenticaion/Authentication/Controllers.md",
-    "Projects/Todo app with calendar sync/NodejsAuthenticaion/Authentication/Authentication.md",
-    "Projects/Todo app with calendar sync/NodejsAuthenticaion/Authentication",
-    "prodcheck.txt~",
-    "4913",
-    "Projects/Todo app with calendar sync/BookStoreApi/BookStoreApi.md",
-    "Projects/Todo app with calendar sync/NodejsAuthenticaion",
+    "DSA/Sliding window problem/2 pointer.md",
+    "DSA/Sliding window problem/Sliding window problem.md",
+    "Shell scripting/Scripting.md",
+    "medium.py",
+    "Projects/Todo app with calendar sync/TypeScript/TypeScript.md",
+    "Projects/Todo app with calendar sync/NodeProjects",
+    "Projects/Todo app with calendar sync/LearnBasicNodejs",
+    "Projects/Todo app with calendar sync/LearnBasicNodejs/GraphQl/GraphQL advance.md",
+    "Projects/Todo app with calendar sync/TypeScript",
+    "Projects/Todo app with calendar sync/LearnBasicNodejs/GraphQl/GraphQL Intermediate.md",
+    "Projects/Todo app with calendar sync/LearnBasicNodejs/Rest API dev/Rest Api.md",
+    "Projects/Todo app with calendar sync/LearnBasicNodejs/Rest API dev/CRUD method in rest api.md",
+    "Projects/Todo app with calendar sync/LearnBasicNodejs/DATABASE/MANGOOSE.md",
+    "Projects/Todo app with calendar sync/NodeProjects/BookStoreApi/BookStoreApi.md",
+    "Projects/Todo app with calendar sync/LearnBasicNodejs/Node js Socket/HTTP socket.md",
+    "Projects/Todo app with calendar sync/LearnBasicNodejs/GraphQl",
+    "Projects/Todo app with calendar sync/LearnBasicNodejs/Node js/HTTP METHOD node.md",
+    "Projects/Todo app with calendar sync/LearnBasicNodejs/DATABASE/IntermdiateMoonoge.md",
+    "Projects/Todo app with calendar sync/LearnBasicNodejs/Node js Socket",
+    "Projects/Todo app with calendar sync/NodeProjects/NodejsAuthenticaion/File upload/File Upload.md",
+    "Shell scripting/Project.md",
+    "Projects/Todo app with calendar sync/NodeProjects/NodejsAuthenticaion/Functionality/Some fucntionality.md",
+    "Projects/Todo app with calendar sync/NodeProjects/NodejsAuthenticaion/Functionality",
+    "Projects/Todo app with calendar sync/NodeProjects/NodejsAuthenticaion/Authentication/Controllers.md",
+    "Projects/Todo app with calendar sync/NodeProjects/NodejsAuthenticaion/Authentication/Authentication.md",
+    "Projects/Todo app with calendar sync/NodeProjects/NodejsAuthenticaion/File upload",
+    "Projects/Todo app with calendar sync/Node js/Untitled",
+    "Projects/Todo app with calendar sync/NodeProjects/NodejsAuthenticaion/Authentication",
     "Projects/Todo app with calendar sync/BookStoreApi/sever.js.md",
-    "Projects/Todo app with calendar sync/DATABASE/MANGOOSE.md",
-    "Projects/Todo app with calendar sync/Express js/Express js.md",
-    "Projects/Todo app with calendar sync/BookStoreApi",
-    "Projects/Todo app with calendar sync/Rest API dev/Rest Api.md",
-    "Projects/Todo app with calendar sync/DATABASE",
-    "Projects/Todo app with calendar sync/Rest API dev/CRUD method in rest api.md",
-    "Projects/Todo app with calendar sync/Express js/EJS.md",
-    "Projects/Todo app with calendar sync/Rest API dev",
-    "Projects/Todo app with calendar sync/Express js/Middleware.md",
-    "Projects/Todo app with calendar sync/Node js/EventEmitter.md",
-    "Projects/Todo app with calendar sync/Node js/HTTP METHOD node.md",
-    "Projects/Todo app with calendar sync/Node js/LEARNING Nodejs.md",
-    "Projects/Todo app with calendar sync/Node js",
-    "Projects/Todo app with calendar sync/Express js",
+    "Projects/Todo app with calendar sync/LearnBasicNodejs/Express js/Express js.md",
+    "Projects/Todo app with calendar sync/LearnBasicNodejs/Express js/EJS.md",
+    "Projects/Todo app with calendar sync/LearnBasicNodejs/Express js/Middleware.md",
+    "Projects/Todo app with calendar sync/LearnBasicNodejs/Node js/EventEmitter.md",
+    "Projects/Todo app with calendar sync/LearnBasicNodejs/Node js/LEARNING Nodejs.md",
     "Untitled.md",
     "Projects/Untitled.md",
-    "SQL/SQL.md",
-    "Projects/Todo app with calendar sync/Todo app with google calendar sync.md",
-    "SQL",
-    "DSA/Current posistion.md",
-    "DSA/Sliding window problem/Sliding window problem.md",
-    "Bug bounty/CSRF.md",
-    "Bug bounty/Cors Misconfiguration.md",
-    "Bug bounty/Target.md",
-    "Bug bounty/Methodlogy.md",
-    "DSA/Hash topics/Tree q's using hashmap.md",
-    "DSA/Hash topics/HUFFMAN CODING.md",
-    "DSA/Tree/BST interview q's/DFS q's BST.md",
     "Pasted image 20241007092656.png"
   ]
 }

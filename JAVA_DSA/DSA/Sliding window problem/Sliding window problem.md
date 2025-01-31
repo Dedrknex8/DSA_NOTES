@@ -1,4 +1,48 @@
+## Longest Subarray
 
+```java
+public class LongestSubarray {  
+    public static void main(String[] args) {  
+        int[] arr = {2,5,1,7,10};  
+        int target = 14;  
+  
+        int res = findLongestSum(arr,target);  
+        System.out.println(res);  
+    }  
+  
+    //Bruteforce Update  
+//    static int findLongestSum(int[] arr, int target) {  
+//        int maxSum = Integer.MIN_VALUE;  
+//  
+//        for (int i = 0; i < arr.length -1; i++) {  
+//            int sum=0;  
+//            for (int j = i ; j < arr.length -1; j++) {  
+//                sum+=arr[j];  
+//                if (sum <= target){  
+//                    maxSum = Math.max(maxSum,sum);  
+//                }  
+//            }  
+//        }  
+//        return maxSum;  
+//    }  
+  
+    //Optimize way    static int findLongestSum(int[] arr, int target) {  
+        int sum = 0;  
+        int maxLength = 0;  
+        int l = 0;  
+  
+        for (int r = 0; r< arr.length; r++) {  
+            sum += arr[r]; //add the current element  
+            //IF SUM EXCEEDS THE TARGET LIMIT            while (sum >= target) {  
+                sum -= arr[l]; // remove the left pointer  
+                l++; //move the left pointer to right  
+            }  
+            maxLength = Math.max(maxLength, r - l + 1);  
+        }  
+        return maxLength;  
+    }  
+}
+```
 
 ## Maximum points from a card
 
