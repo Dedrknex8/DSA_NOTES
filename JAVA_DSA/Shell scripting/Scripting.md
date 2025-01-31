@@ -68,12 +68,12 @@ echo "values from 2-3 ${myArray[*]:2:2}"
 ```bash
 #!/bin/bash
 
-# How to store array key value pair
+# How to store key value pair
 
-declare -A myArray
-myArray=( [key]=value [name]=Chuck )
-
-echo "get the first value $(myArray[key])"
+declare -A  myArray # -A is used to delcare array in name key type
+myArray=( [key]=value [name]=Chuck)
+echo "get the first value of array by key ${myArray[key]}"
+echo "second value by key : ${myArray[name]}"
 ```
 
 
