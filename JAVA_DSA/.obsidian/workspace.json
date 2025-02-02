@@ -4,21 +4,21 @@
     "type": "split",
     "children": [
       {
-        "id": "080ebc94c458dfe9",
+        "id": "55da8841a017c4e2",
         "type": "tabs",
         "children": [
           {
-            "id": "73b31e267407b431",
+            "id": "fef68ddcada340e0",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "DSA/Sliding window problem/Sliding window problem.md",
+                "file": "Projects/Todo app with calendar sync/NodejsAdnanceConcept/Streams.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "Sliding window problem"
+              "title": "Streams"
             }
           }
         ]
@@ -40,7 +40,8 @@
             "state": {
               "type": "file-explorer",
               "state": {
-                "sortOrder": "alphabetical"
+                "sortOrder": "alphabetical",
+                "autoReveal": false
               },
               "icon": "lucide-folder-closed",
               "title": "Files"
@@ -52,7 +53,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "longest",
+                "query": "",
                 "matchingCase": false,
                 "explainSearch": false,
                 "collapseAll": false,
@@ -73,8 +74,7 @@
               "title": "Bookmarks"
             }
           }
-        ],
-        "currentTab": 1
+        ]
       }
     ],
     "direction": "horizontal",
@@ -163,8 +163,13 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "ae1821e1fdaa2bea",
+  "active": "fef68ddcada340e0",
   "lastOpenFiles": [
+    "Projects/Todo app with calendar sync/NodejsAdnanceConcept/Buffer.md",
+    "Projects/Todo app with calendar sync/NodejsAdnanceConcept/Streams.md",
+    "Projects/Todo app with calendar sync/NodejsAdnanceConcept/Event loops.md",
+    "Projects/Todo app with calendar sync/Untitled.canvas",
+    "Projects/Todo app with calendar sync/NodejsAdnanceConcept",
     "DSA/Sliding window problem/2 pointer.md",
     "DSA/Sliding window problem/Sliding window problem.md",
     "Shell scripting/Scripting.md",
@@ -192,15 +197,11 @@
     "Projects/Todo app with calendar sync/NodeProjects/NodejsAuthenticaion/Authentication/Authentication.md",
     "Projects/Todo app with calendar sync/NodeProjects/NodejsAuthenticaion/File upload",
     "Projects/Todo app with calendar sync/Node js/Untitled",
-    "Projects/Todo app with calendar sync/NodeProjects/NodejsAuthenticaion/Authentication",
     "Projects/Todo app with calendar sync/BookStoreApi/sever.js.md",
     "Projects/Todo app with calendar sync/LearnBasicNodejs/Express js/Express js.md",
     "Projects/Todo app with calendar sync/LearnBasicNodejs/Express js/EJS.md",
     "Projects/Todo app with calendar sync/LearnBasicNodejs/Express js/Middleware.md",
     "Projects/Todo app with calendar sync/LearnBasicNodejs/Node js/EventEmitter.md",
-    "Projects/Todo app with calendar sync/LearnBasicNodejs/Node js/LEARNING Nodejs.md",
-    "Untitled.md",
-    "Projects/Untitled.md",
     "Pasted image 20241007092656.png"
   ]
 }
