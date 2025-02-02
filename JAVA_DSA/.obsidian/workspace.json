@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Projects/Todo app with calendar sync/NodejsAdnanceConcept/Streams.md",
+                "file": "Projects/Todo app with calendar sync/NodejsAdnanceConcept/Express Concept/ADVANCE TOPICS.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "Streams"
+              "title": "ADVANCE TOPICS"
             }
           }
         ]
@@ -165,8 +165,10 @@
   },
   "active": "fef68ddcada340e0",
   "lastOpenFiles": [
-    "Projects/Todo app with calendar sync/NodejsAdnanceConcept/Buffer.md",
     "Projects/Todo app with calendar sync/NodejsAdnanceConcept/Streams.md",
+    "Projects/Todo app with calendar sync/NodejsAdnanceConcept/Express Concept/ADVANCE TOPICS.md",
+    "Projects/Todo app with calendar sync/NodejsAdnanceConcept/Express Concept",
+    "Projects/Todo app with calendar sync/NodejsAdnanceConcept/Buffer.md",
     "Projects/Todo app with calendar sync/NodejsAdnanceConcept/Event loops.md",
     "Projects/Todo app with calendar sync/Untitled.canvas",
     "Projects/Todo app with calendar sync/NodejsAdnanceConcept",
@@ -196,12 +198,10 @@
     "Projects/Todo app with calendar sync/NodeProjects/NodejsAuthenticaion/Authentication/Controllers.md",
     "Projects/Todo app with calendar sync/NodeProjects/NodejsAuthenticaion/Authentication/Authentication.md",
     "Projects/Todo app with calendar sync/NodeProjects/NodejsAuthenticaion/File upload",
-    "Projects/Todo app with calendar sync/Node js/Untitled",
     "Projects/Todo app with calendar sync/BookStoreApi/sever.js.md",
     "Projects/Todo app with calendar sync/LearnBasicNodejs/Express js/Express js.md",
     "Projects/Todo app with calendar sync/LearnBasicNodejs/Express js/EJS.md",
     "Projects/Todo app with calendar sync/LearnBasicNodejs/Express js/Middleware.md",
-    "Projects/Todo app with calendar sync/LearnBasicNodejs/Node js/EventEmitter.md",
     "Pasted image 20241007092656.png"
   ]
 }
