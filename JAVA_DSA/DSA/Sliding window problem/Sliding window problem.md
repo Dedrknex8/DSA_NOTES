@@ -33,7 +33,8 @@ public class LongestSubarray {
   
         for (int r = 0; r< arr.length; r++) {  
             sum += arr[r]; //add the current element  
-            //IF SUM EXCEEDS THE TARGET LIMIT            while (sum >= target) {  
+            //IF SUM EXCEEDS THE TARGET LIMIT
+                while (sum >= target) {  
                 sum -= arr[l]; // remove the left pointer  
                 l++; //move the left pointer to right  
             }  
@@ -304,46 +305,71 @@ problem : add fruits of distincs element as long as there at most 2 types
 > Simple bruteforce approach
 
 ```java
-class Solution {
-
-    public int totalFruit(int[] fruits) {
-
-        int maxLen =0;
-
-        int n = fruits.length;
-
+public class LongestSubarray {  
+    public static void main(String[] args) {  
+        int[] arr = {2,5,1,7,10};  
+        int target =3 ;  
   
-
-        for(int i=0;i<n;i++){
-
-            HashSet<Integer> hash = new HashSet<>();
-
-            for(int j=i;j<n;j++){
-
-                hash.add(fruits[j]);
-
+        int res = findLongestSum(arr,target);  
+        System.out.println(res);  
+    }  
   
-
-                if(hash.size() <= 2){
-
-                    maxLen = Math.max(maxLen,j-i+1);
-
+    //Bruteforce Update  
+//    static int findLongestSum(int[] arr, int target) {  
+//        int maxSum = Integer.MIN_VALUE;  
+//  
+//        for (int i = 0; i < arr.length -1; i++) {  
+//            int sum=0;  
+//            for (int j = i ; j < arr.length -1; j++) {  
+//                sum+=arr[j];  
+//                if (sum <= target){  
+//                    maxSum = Math.max(maxSum,sum);  
+//                }  
+//            }  
+//        }  
+//        return maxSum;  
+//    }  
   
-
-                }
-
-                else
-
-                    break;
-
-            }
-
-        }
-
-        return maxLen;
-
-    }
-
+    //Optimize way//    static int findLongestSum(int[] arr, int target) {  
+//        int sum = 0;  
+//        int maxLength = 0;  
+//        int l = 0;  
+//  
+//        for (int r = 0; r< arr.length; r++) {  
+//            sum += arr[r]; //add the current element  
+//            //IF SUM EXCEEDS THE TARGET LIMIT  
+//            while (sum >= target) {  
+//                sum -= arr[l]; // remove the left pointer  
+//                l++; //move the left pointer to right  
+//            }  
+//            maxLength = Math.max(maxLength, r - l + 1);  
+//        }  
+//        return maxLength;  
+//    }  
+    static int findLongestSum(int[] arr, int target) {  
+    int left=0;  
+    int right=0;  
+    int sum=0;  
+    int maxLength=0;  
+    while(right < arr.length){  
+        sum+=arr[right];  
+  
+        //IF INVALID CASE  
+        if(sum>target){  
+            sum -= arr[left];  
+            left = left+1;  
+        }  
+  
+  
+        //iF VALID CASE  
+        if(sum <=target){  
+            maxLength=Math.max(maxLength,right-left+1);  
+  
+        }  
+        right++;  
+    }  
+    return maxLength;  
+    }  
 }
 ```
 

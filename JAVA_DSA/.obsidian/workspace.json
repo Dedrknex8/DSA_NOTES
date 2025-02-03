@@ -27,12 +27,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Projects/Todo app with calendar sync/NodejsAdnanceConcept/Express Concept/ADVANCE TOPICS.md",
+                "file": "DSA/Sliding window problem/Sliding window problem.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "ADVANCE TOPICS"
+              "title": "Sliding window problem"
             }
           }
         ],
@@ -181,15 +181,15 @@
   },
   "active": "2bebc701520e0dd4",
   "lastOpenFiles": [
-    "Projects/Todo app with calendar sync/NodejsAdnanceConcept/Streams.md",
+    "DSA/Sliding window problem/2 pointer.md",
+    "DSA/Sliding window problem/Sliding window problem.md",
     "Projects/Todo app with calendar sync/NodejsAdnanceConcept/Express Concept/ADVANCE TOPICS.md",
+    "Projects/Todo app with calendar sync/NodejsAdnanceConcept/Streams.md",
     "Projects/Todo app with calendar sync/NodejsAdnanceConcept/Express Concept",
     "Projects/Todo app with calendar sync/NodejsAdnanceConcept/Buffer.md",
     "Projects/Todo app with calendar sync/NodejsAdnanceConcept/Event loops.md",
     "Projects/Todo app with calendar sync/Untitled.canvas",
     "Projects/Todo app with calendar sync/NodejsAdnanceConcept",
-    "DSA/Sliding window problem/2 pointer.md",
-    "DSA/Sliding window problem/Sliding window problem.md",
     "Shell scripting/Scripting.md",
     "medium.py",
     "Projects/Todo app with calendar sync/TypeScript/TypeScript.md",
