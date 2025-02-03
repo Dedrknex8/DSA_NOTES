@@ -3,7 +3,10 @@
 
 #### To be covered
 - [x] cors
-- [ ] redis
+- [x] api validation
+- [x] rate limit 
+- [x] various api version techniques
+- [x] error handling
 
 ## what is CORS?
 
