@@ -17,7 +17,7 @@
  `const redis = require('redis);`
 
 
-#### How to create a redis client
+#### How to create a Redis client
 
 ```node
 const client = redis.createClient({
@@ -51,7 +51,7 @@ client.on('Error', (error)=> console.log(error)
 ```
 
 
-#### A function to connect to redis client
+#### A function to connect to Redis client
 
 ```node
 const redis = require('redis');
@@ -201,27 +201,14 @@ cosole.log(email,name,passwd);
 
 ```node
 // sets -> SADD , SMEMBERS, SISMEMBER,SREM
-
         // await client.sRem("user:name");
-
         await client.sAdd("user:name",["varun","Rahul","randomeNickName"]);
-
-  
-
-        const extractSetName = await client.sMembers("user:name");
-
-  
-
+   const extractSetName = await client.sMembers("user:name");
         console.log(extractSetName);
 
         //check if varun is a meber of set or not return true if present and false if not present
 
-  
-
         const isVarunIsOneOfUserNickName = await client.sIsMember("user:name","varun");
-
-  
-
         console.log(isVarunIsOneOfUserNickName);
 
         const removeName = await client.sRem("user:name","Rahul");
@@ -230,5 +217,76 @@ cosole.log(email,name,passwd);
 
         const getUpdatedUserName = await client.sMembers("user:name");
 
-        console.log(getUpdatedUserName);
+     console.log(getUpdatedUserName);
+``` 
+
+## Pub/Sub
+
+>**Pub/Sub (short for publish/subscribe)** is a messaging technology that facilitates communication between different components in a distributed system
+
+>It's mainly used to communicate b\w two different components without have to form a direct connection
+
+Example :  Two location A & B want to share products b\w A and B u can't send directly to B but can use a delivery agent to send your package to point B
+
+```node
+const redis = require('redis');
+
+const client = redis.createClient({
+
+    host:'localhost',
+
+    port:6379
+
+});
+
+  client.on("error",(error)=>{
+
+    console.log("error connecting to redis client");
+
+});
+
+async function testAdditonalFeatures(){
+
+    try {
+
+        await client.connect();
+
+  
+
+        const subsriber =  client.duplicate(); //create a new client with same config
+
+        await subsriber.connect(); // connect to resis sevre for the subscriber
+
+        await subsriber.subscribe("dummy-channel",(message, channel) =>{
+
+            console.log(`recived messsage form ${channel} : ${message}`);
+
+        })
+
+        //publish message to dummy-channel
+
+        await client.publish('dummy-channel','Some dummy data from publisher');
+        //ensure that message are recived before unsubscribing
+
+        await new Promise((resolve)=> setTimeout(resolve,1000));
+
+        await subsriber.unsubscribe('dummy-channel');
+
+        await subsriber.quit();
+
+        console.log('connection exits');
+
+    } catch (error) {
+
+        console.log(error);
+
+    }finally{
+
+        await client.quit()
+
+    }
+
+}
+testAdditonalFeatures();
 ```
+
