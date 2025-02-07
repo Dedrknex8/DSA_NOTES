@@ -107,7 +107,7 @@ class Solution {
 4. complexity is not good as o(n ^ 2) and space o(k)
 
 ```code
- int maxLength =0;
+int maxLength =0;
           for(int i=0;i<s.length();i++){
 
              HashSet<Character> hashSet = new HashSet<>();
@@ -373,4 +373,38 @@ public class LongestSubarray {
 }
 ```
 
-Done Upto fruit basket
+
+## Longest subarray with at most 2 distinct k charaters
+
+```java
+import java.util.HashMap;  
+  
+public class Kdistinctelements {  
+    public static void main(String[] args) {  
+        String s = "aaabbccd";  
+        int result = findKDistinctElement(s, 2);  
+        System.out.println(result);  
+    }  
+  
+    static int findKDistinctElement(String s, int target) {  
+        HashMap<Character, Integer> hash = new HashMap<>();  
+        int maxLength = 0;  
+        int left = 0;  
+        for (int right = 0; right < s.length(); right++) {  
+            hash.put(s.charAt(right), hash.getOrDefault(s.charAt(right), 0) + 1);  
+  
+            while (hash.size() > target) {  
+                hash.put(s.charAt(left), hash.get(s.charAt(left)) - 1);  
+                if (hash.get(s.charAt(left)) == 0) {  
+                    hash.remove(s.charAt(left));  
+                }  
+                 left++;  
+            }  
+            if (hash.size() == target) {  
+                maxLength = Math.max(maxLength, right - left + 1);  
+            }  
+        }  
+        return maxLength;  
+    }  
+}
+```

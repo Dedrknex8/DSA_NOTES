@@ -13,16 +13,30 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Projects/Todo app with calendar sync/NodejsAdnanceConcept/Express Concept/ADVANCE TOPICS.md",
+                "file": "Projects/Todo app with calendar sync/NodejsAdnanceConcept/Redis/Redis.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "ADVANCE TOPICS"
+              "title": "Redis"
             }
           },
           {
-            "id": "2bebc701520e0dd4",
+            "id": "e7448e911ada4f13",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "DSA/Sliding window problem/Sliding window problem.md",
+                "mode": "source",
+                "source": false
+              },
+              "icon": "lucide-file",
+              "title": "Sliding window problem"
+            }
+          },
+          {
+            "id": "416cf0fbf33ca534",
             "type": "leaf",
             "state": {
               "type": "markdown",
@@ -178,14 +192,18 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "2bebc701520e0dd4",
+  "active": "e7448e911ada4f13",
   "lastOpenFiles": [
-    "DSA/Current posistion.md",
-    "Projects/Todo app with calendar sync/NodejsAdnanceConcept/Redis/Redis.md",
-    "Projects/Todo app with calendar sync/NodejsAdnanceConcept/Redis",
-    "DSA/Sliding window problem/Sliding window problem.md",
     "DSA/Sliding window problem/2 pointer.md",
+    "DSA/Sliding window problem/Sliding window problem.md",
+    "Projects/Todo app with calendar sync/NodejsAdnanceConcept/Redis/Redis.md",
+    "CN/Computer Networks.md",
+    "Untitled.md",
+    "Git cheatshett.md",
+    "CN",
     "Projects/Todo app with calendar sync/NodejsAdnanceConcept/Express Concept/ADVANCE TOPICS.md",
+    "DSA/Current posistion.md",
+    "Projects/Todo app with calendar sync/NodejsAdnanceConcept/Redis",
     "Projects/Todo app with calendar sync/NodejsAdnanceConcept/Streams.md",
     "Projects/Todo app with calendar sync/NodejsAdnanceConcept/Express Concept",
     "Projects/Todo app with calendar sync/NodejsAdnanceConcept/Buffer.md",
@@ -212,11 +230,7 @@
     "Projects/Todo app with calendar sync/NodeProjects/NodejsAuthenticaion/File upload/File Upload.md",
     "Shell scripting/Project.md",
     "Projects/Todo app with calendar sync/NodeProjects/NodejsAuthenticaion/Functionality/Some fucntionality.md",
-    "Projects/Todo app with calendar sync/NodeProjects/NodejsAuthenticaion/Functionality",
     "Projects/Todo app with calendar sync/NodeProjects/NodejsAuthenticaion/Authentication/Controllers.md",
-    "Projects/Todo app with calendar sync/NodeProjects/NodejsAuthenticaion/Authentication/Authentication.md",
-    "Projects/Todo app with calendar sync/BookStoreApi/sever.js.md",
-    "Projects/Todo app with calendar sync/LearnBasicNodejs/Express js/Express js.md",
     "Pasted image 20241007092656.png"
   ]
 }

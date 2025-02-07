@@ -2,6 +2,6 @@
 
 ## Structure of Computer Network
 
-This basically defines the structure of netwrok from the source of the networkl
+This basically defines the structure of netwrok from the source of the network
 
 
