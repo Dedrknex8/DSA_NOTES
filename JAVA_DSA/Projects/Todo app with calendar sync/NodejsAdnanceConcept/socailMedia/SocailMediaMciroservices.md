@@ -14,12 +14,16 @@ identity-services> npm i dotenv argon2 express express-rate-limit cors helmet io
 
 ## summary of the library used
 
-1. joi -> used validate schema
+1. Joi -> used validate schema
 2. agron2 -> used for hashing
-3. winston - > provide multiple loging library support
+3. Winston - > provide multiple loging library support
 4. helmet -> Help secure Express apps by setting HTTP response headers.
 
 
 ## What is the main purpose ?
 
-The two separate folder wiil communicate with each other using microservices
+The two separate folder will communicate with each other using microservices
+
+# Code goes here for Identity-service
+
+> Link to github code page for better resuability
