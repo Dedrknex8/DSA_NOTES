@@ -79,3 +79,82 @@ const generateToken = async(user)=>{
 module.exports = generateToken
 ```
 
+
+## how conenction is made
+
+>Used express http proxy which is used to proxy the proxy the port or forward it and also repalced /api -> /v1 code 
+
+```node
+// create proxy
+
+const proxyOptions = {
+
+    proxyReqPathResolver: (req) => {
+
+         return req.originalUrl.replace(/^\/v1/, '/api'); //this will replace api with v1 and new path as with port 3001
+
+        // console.log("🔹 Proxying request to:", newPath);
+
+        // return newPath;
+
+    },      
+
+    proxyErrorHandler : (err,res,next)=>{
+
+        console.log(err);
+
+        logger.error(`Proxy error ${err.message}`);
+
+        res.status(500).json({
+
+            success:false,
+
+            message:`Internal Server Error err:${err.message}`
+
+        })
+
+    }
+
+}
+
+  
+
+//setting proxy for identity service
+
+app.use('/v1/auth',proxy(process.env.IDENTITY_SERVICE_URL,{
+
+    ...proxyOptions,
+
+    proxyReqOptDecorator: (proxyReqOpts,srcReq)=>{
+
+        proxyReqOpts.headers['Content-Type']="application/json"
+
+        return proxyReqOpts;
+
+    },
+
+    userResDecorator: (proxyRes,proxyResData,userReq,userRes)=>{
+
+        logger.info(`Response recived from Identity service: ${proxyRes.statusCode} `);
+
+        // console.log("Something wrong here");
+
+    return proxyResData;
+
+    },
+
+}));
+
+  
+
+app.use(errorHandler);
+
+  
+app.listen(PORT,()=>{
+
+    logger.info(`API GATEWAY IS RUNNIN ON PORT ${PORT} `);
+
+    logger.info(`Identity service is running on ${process.env.IDENTITY_SERVICE_URL} `)
+
+})
+```
