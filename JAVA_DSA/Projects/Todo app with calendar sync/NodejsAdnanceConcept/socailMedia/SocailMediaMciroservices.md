@@ -158,3 +158,20 @@ app.listen(PORT,()=>{
 
 })
 ```
+
+
+This note is broken will complete it later on but link to the repo is given below 
+
+[RepoLink](https://github.com/dedrknex8)
+
+
+#### POST SERVICES
+
+>Again created three more services to manage the manage search , store media , post and delete media 
+
+Requirements:
+```powershell
+npm i cors dotenv helmet express mongoose  jsonwebtoken winston ioredis 
+```
+
+`nodemon --save-dev`
