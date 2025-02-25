@@ -117,3 +117,31 @@ log(getAllName) // return 01
 ## Filter FUNCTION
 
 > Filter is a function that match and returns all the value that match with the condition
+
+## Some
+> Check a function for a condition and return true if valid or else return false
+
+## Every
+
+>Check if all the objects in a function statisfy the condition or not.
+
+```node
+const singlePerson = [
+{
+name='a',age=12,place=india
+},
+{name='b',age=15,place=china
+},
+{
+name='c',age=18,place=usa
+}];
+
+let getAllName = singlePerson.every((getname,index)=>{
+return ${getname.age > 19};
+});
+
+log(getAllName) //return false 
+```
+
+## includes 
+> Check if some object is available in array or not

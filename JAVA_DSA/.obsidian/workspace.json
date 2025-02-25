@@ -55,12 +55,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Projects/Todo app with calendar sync/NodejsAdnanceConcept/socailMedia/rabbitMQ/Connect two event handler.md",
+                "file": "Reactjs/Introduction Es-6 modules.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "Connect two event handler"
+              "title": "Introduction Es-6 modules"
             }
           },
           {
@@ -222,8 +222,10 @@
   },
   "active": "2b020088e5968455",
   "lastOpenFiles": [
-    "Projects/Todo app with calendar sync/NodejsAdnanceConcept/Express Concept/ADVANCE TOPICS.md",
     "Projects/Todo app with calendar sync/NodejsAdnanceConcept/socailMedia/rabbitMQ/Connect two event handler.md",
+    "Reactjs/Introduction Es-6 modules.md",
+    "Reactjs",
+    "Projects/Todo app with calendar sync/NodejsAdnanceConcept/Express Concept/ADVANCE TOPICS.md",
     "Projects/Todo app with calendar sync/NodejsAdnanceConcept/socailMedia/rabbitMQ",
     "Projects/Todo app with calendar sync/NodeProjects/NodejsAuthenticaion/File upload/File Upload.md",
     "Projects/Todo app with calendar sync/LearnBasicNodejs/DATABASE/MANGOOSE.md",
@@ -252,13 +254,11 @@
     "Projects/Todo app with calendar sync/NodeProjects",
     "Projects/Todo app with calendar sync/LearnBasicNodejs",
     "Projects/Todo app with calendar sync/LearnBasicNodejs/GraphQl/GraphQL advance.md",
-    "Projects/Todo app with calendar sync/TypeScript",
     "Projects/Todo app with calendar sync/LearnBasicNodejs/GraphQl/GraphQL Intermediate.md",
     "Projects/Todo app with calendar sync/LearnBasicNodejs/Rest API dev/Rest Api.md",
     "Projects/Todo app with calendar sync/LearnBasicNodejs/Rest API dev/CRUD method in rest api.md",
     "Projects/Todo app with calendar sync/NodeProjects/BookStoreApi/BookStoreApi.md",
     "Projects/Todo app with calendar sync/LearnBasicNodejs/Node js Socket/HTTP socket.md",
-    "Projects/Todo app with calendar sync/LearnBasicNodejs/Node js/HTTP METHOD node.md",
     "Pasted image 20241007092656.png"
   ]
 }
