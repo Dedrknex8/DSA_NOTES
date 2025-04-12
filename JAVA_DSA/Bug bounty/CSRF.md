@@ -25,3 +25,9 @@ How it work??
 - A *Relevant Action* : There should be a action within the application that the attacker could take  advantages of like the change-Email action,reset password
 - *Cookie based Authentication* : The application should make use  cookies to identify the user who has made the requests. on a http request
 - **No unpredictable request parameters.** : The requests that perform the action do not contain any parameters whose values the attacker cannot determine or guess. For example, when causing a user to change their password, the function is not vulnerable if an attacker needs to know the value of the existing password.
+
+# What are the 4 main criteria to identify a CSRF
+
+1. The cookie must be tied to http session
+2. the session must be tied to a particular actions like chaniging password,updating email etc
+3. The user may be able to change request method
