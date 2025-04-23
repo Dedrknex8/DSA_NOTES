@@ -3,15 +3,15 @@
 
 # Topics to be covered
 
- - [ ] Installation
- - [ ] Node module system
- - [ ] Path module
- - [ ] File System
- - [ ] Http module
- - [ ] calllbacks and callback hell
- - [ ] Promises
- - [ ] Async Await
- - [ ] Event emitter
+ - [x] Installation
+ - [x] Node module system
+ - [x] Path module
+ - [x] File System
+ - [x] Http module
+ - [x] calllbacks and callback hell
+ - [x] Promises
+ - [x] Async Await
+ - [x] Event emitter
  - [ ] 
 
 
@@ -19,6 +19,10 @@
 
 > Started my first day with installation of node js 
 > And learning it from the scratch as have no idea about it
+
+## insallation of package.json
+
+`npm init -y`
 ### Node js module export
 
 > Okay so module export it just like components in react js 

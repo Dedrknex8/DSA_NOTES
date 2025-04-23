@@ -99,7 +99,7 @@ let getAllName = singlePerson.map((getname,index)=>{
 return ${getname.name};
 });
 
-log(getAllName)
+log(getAllName) // output a,b,c,
 ```
 
 ## Find FUNCTION
@@ -144,4 +144,5 @@ log(getAllName) //return false
 ```
 
 ## includes 
+
 > Check if some object is available in array or not
