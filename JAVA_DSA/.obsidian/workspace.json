@@ -41,12 +41,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Port sWigger/API testing.md",
+                "file": "Medium Article/OAuth.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "API testing"
+              "title": "OAuth"
             }
           }
         ],
@@ -194,14 +194,30 @@
   },
   "active": "e5ef1d5ffeb1d014",
   "lastOpenFiles": [
-    "Networking/Networking notes.md",
+    "Pasted image 20241007092656.png",
+    "Medium Article/OAuth.md",
+    "Medium Article/O Auth",
+    "Port sWigger/Authentication.md",
+    "Medium",
+    "Projects/Todo app with calendar sync/Untitled.canvas",
+    "Projects/Todo app with calendar sync/NodejsAdnanceConcept/socailMedia/Untitled",
+    "Projects/Todo app with calendar sync/Node js/Untitled",
+    "Projects/Todo app with calendar sync/Node js",
+    "Networking/assests/Pasted image 20250616201329.png",
     "Port sWigger/API testing.md",
+    "Networking/Networking notes.md",
+    "Projects/Todo app with calendar sync/LearnBasicNodejs/Express js/Express js.md",
+    "Projects/Todo app with calendar sync/NodejsAdnanceConcept/Express Concept/ADVANCE TOPICS.md",
+    "Projects/Todo app with calendar sync/LearnBasicNodejs/Rest API dev/CRUD method in rest api.md",
+    "Projects/Todo app with calendar sync/LearnBasicNodejs/Node js Socket/HTTP socket.md",
+    "Projects/Todo app with calendar sync/LearnBasicNodejs/Node js/LEARNING Nodejs.md",
+    "Projects/Todo app with calendar sync/LearnBasicNodejs/Node js/HTTP METHOD node.md",
+    "Projects/Todo app with calendar sync/LearnBasicNodejs/Node js/EventEmitter.md",
     "Port sWigger",
     "Medium Article/Get POST method information Disclousre.md",
     "Medium Article",
     "Checklist.md",
     "Git cheatshett.md",
-    "Pasted image 20241007092656.png",
     "Bug bounty/GraphQL/GraphQL.md",
     "Bug bounty/GraphQL",
     "Bug bounty/CSRF.md",
@@ -220,22 +236,6 @@
     "Projects/Todo app with calendar sync/NodejsAdnanceConcept/socailMedia/SocailMediaMciroservices.md",
     "Projects/Todo app with calendar sync/NodeProjects/BookStoreApi/BookStoreApi.md",
     "CN/Computer Networks.md",
-    "Networking/assests",
-    "Projects/Todo app with calendar sync/LearnBasicNodejs/Node js/LEARNING Nodejs.md",
-    "Networking",
-    "Projects/Todo app with calendar sync/LearnBasicNodejs/Node js/HTTP METHOD node.md",
-    "Projects/Todo app with calendar sync/LearnBasicNodejs/Node js/EventEmitter.md",
-    "Next js/Next js basic.md",
-    "Reactjs/Introduction Es-6 modules.md",
-    "Next js",
-    "Projects/Todo app with calendar sync/NodejsAdnanceConcept/socailMedia/rabbitMQ/Connect two event handler.md",
-    "Reactjs",
-    "Projects/Todo app with calendar sync/NodejsAdnanceConcept/Express Concept/ADVANCE TOPICS.md",
-    "Projects/Todo app with calendar sync/NodejsAdnanceConcept/socailMedia/rabbitMQ",
-    "Projects/Todo app with calendar sync/NodeProjects/NodejsAuthenticaion/File upload/File Upload.md",
-    "Projects/Todo app with calendar sync/LearnBasicNodejs/DATABASE/MANGOOSE.md",
-    "Projects/Todo app with calendar sync/LearnBasicNodejs/DATABASE/IntermdiateMoonoge.md",
-    "Projects/Todo app with calendar sync/NodejsAdnanceConcept/socailMedia",
-    "Projects/Todo app with calendar sync/Untitled.canvas"
+    "Networking/assests"
   ]
 }
