@@ -114,3 +114,46 @@ public class Heap {
     }  
 }
 ```
+
+## Max heap find the weight of stone
+
+```java
+//https://leetcode.com/problems/last-stone-weight/
+class Solution {
+
+    public int lastStoneWeight(int[] stones) {
+
+        //CREATE A MAXHEAP
+
+         PriorityQueue<Integer> maxHeap = new PriorityQueue<>(Collections.reverseOrder());
+
+         for(int stone: stones){
+
+            maxHeap.add(stone);
+
+         }
+
+  
+
+         //REOVE THE STONES FROM LAST AND CHECK IF THEY'RE EQUAL OR NOT
+
+         while(maxHeap.size() > 1){
+
+            int y = maxHeap.poll();
+
+            int x = maxHeap.poll();
+
+            if(y!=x){
+
+                maxHeap.add(y-x); //IF THEY'RE NOT EQUAL THEN ADD THEIR DIFFERENCE IN THE HEAP
+
+            }
+
+         }
+
+         return maxHeap.isEmpty() ? 0 : maxHeap.peek(); //IF STACK EMPTY RETURN ZERO OR ELSE WHATEVER LEFT
+
+    }
+
+}
+```
