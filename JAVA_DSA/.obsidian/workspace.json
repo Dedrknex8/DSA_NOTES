@@ -41,12 +41,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "DSA/Heap DSA/Heap.md",
+                "file": "Bug bounty/Recon/Methodlogy.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "Heap"
+              "title": "Methodlogy"
             }
           }
         ],
@@ -194,6 +194,11 @@
   },
   "active": "e5ef1d5ffeb1d014",
   "lastOpenFiles": [
+    "Bug bounty/Recon/Recon.md",
+    "Bug bounty/Recon/Methodlogy.md",
+    "Bug bounty/Target.md",
+    "DSA/Heap DSA/Heap.md",
+    "Bug bounty/Recon",
     "DSA/Array/Array.md",
     "DSA/Sliding window problem/2 pointer.md",
     "Bug bounty/Cache Deceptiion/Cache.md",
@@ -228,11 +233,6 @@
     "Bug bounty/GraphQL/GraphQL.md",
     "Bug bounty/GraphQL",
     "Bug bounty/CSRF.md",
-    "Bug bounty/ClickJAcking/Click Jacking.md",
-    "Bug bounty/ClickJAcking/CheatSeat.md",
-    "Bug bounty/Cors Misconfiguration.md",
-    "Bug bounty/Methodlogy.md",
-    "Bug bounty/ClickJAcking",
     "Networking/assests/Pasted image 20250322193850.png",
     "Networking/assests/Pasted image 20250317184601.png",
     "Networking/assests/Pasted image 20250316123616.png",

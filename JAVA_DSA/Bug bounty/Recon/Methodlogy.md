@@ -8,7 +8,8 @@
 ### Submoain Enumeration
  
  -  Assetfinder
- - crt.sh
+ - crt.sh -> To find certificates
+ - 
  - Subdomains .txt
 ### Find working Subdomains
  - httpx
@@ -60,5 +61,12 @@ Find urls in the site using tools like
 
 https://infosecwriteups.com/what-to-do-after-choosing-a-target-part-01-bug-bounty-0e7eda23d324
 
+
+# Zero click account takeover
+
+> Session cookies should be validated carefully
+# Jwt misconfiguration
+
+- If same jwt configuration work in all site then one use one reponse to validate in other domains of same configuration
 
 
